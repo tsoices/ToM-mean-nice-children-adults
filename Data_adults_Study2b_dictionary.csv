@@ -1,0 +1,19 @@
+﻿"This is the dictionary for the dataset ""Data_adults_Study2b.csv"". This dataset is from Study 2b (see main text and Supplementary Material).",
+,
+Variable,Definition
+Duration,Duration it took for participant to complete the survey (in seconds)
+Finished,Whether participant finished the survey (True or False)
+RecordedDate,Date
+ResponseId,Participant ID
+Age,Age (in years)
+Gender,Male or Female
+item,Item #
+TF,Response to false belief question (True or False)
+TF_RT,Response time to false belief question (in seconds)
+Nice,"Response to ""How nice do you think [mean / nice / neutral] agent is?"" (scale ranges from 1 (not at all) to 7 (very))"
+Nice_RT,Response time to the nice question (in seconds)
+trial,Trial # (order presented to the participant)
+condition,"Condition (competition [mean], neutral, cooperation [nice])"
+Answer,Correct answer (True or False)
+Question,Question presented to the participant
+correct,Whether participant got the question correct (True or False)

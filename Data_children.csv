@@ -1,0 +1,678 @@
+Subject Number,Gender,Nice_Mean,Test Date,Age,Age Category,Ethnicity,Usable_Final_Sally,Exclusion_Criteria_Sally,Where will Sally look?,Where does Sally think her ball is?,Should Anne and Sally be friends?,Is Anne a nice girl or not a nice girl,Is Sally a nice girl or not a nice girl?,Order of think and look asked,1: look asked first; 2: think asked first 
+1000,M,Nice,4/7/13,4.688868613,four,Wh,0,pilot,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1001,F,Nice,4/7/13,4.227820372,four,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1002,M,Nice,4/7/13,4.167579409,four,As,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1003,M,Mean,4/7/13,4.167579409,four,As,1,,Closet,Closet,Yes,Nice,Mean,Look 1st asked,1
+1004,M,Mean,4/7/13,4.590328467,four,Wh,1,,Closet,Closet,Yes,Nice,Mean,Look 1st asked,1
+1005,F,Nice,4/21/13,4.760036496,four,Wh,1,,Basket,Closet,Yes,Nice,Nice,Look 1st asked,1
+1006,F,Nice,4/21/13,3.277207392,three,Wh,1,,Closet,Basket,Yes,Nice,Mean,Look 1st asked,1
+1007,M,Nice,4/21/13,4.623175182,four,Wh,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1008,F,Mean,4/21/13,5.096715328,five,Filipino,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1009,F,Mean,4/22/13,4.376824818,four,Wh,1,,Basket,Closet,No,Mean,Mean,Look 1st asked,1
+1010,F,Mean,4/22/13,3.699342826,three,Wh,0,fussed out,,,,,,Look 1st asked,1
+1011,M,Mean,4/22/13,4.38229927,four,Br,1,,Basket,Basket,No,Mean,Nice,Look 1st asked,1
+1012,M,Mean,4/22/13,5.118613139,five,Wh,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1013,M,Mean,4/22/13,3.825301205,three,Bl,1,,Closet,Closet,No,Mean,Nice,Look 1st asked,1
+1014,F,Nice,4/22/13,3.540525739,three,Wh,0,did not complete task,,,,,,Look 1st asked,1
+1015,F,Nice,4/22/13,3.036276523,three,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1016,F,Nice,4/27/13,4.47810219,four,As,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1017,M,Nice,4/28/13,4.620437956,four,Wh,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1018,F,Nice,5/2/13,4.21686747,four,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1019,M,Nice,5/2/13,4.541058394,four,Wh,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1020,M,Nice,5/2/13,3.080082136,three,Mix as/Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1021,F,Nice,5/10/13,4.047097481,four,Wh,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1022,F,Nice,5/10/13,4.219605696,four,As,0,language issues,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1023,F,Mean,5/10/13,2.776180698,younger,FilipiNo,0,was too young,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1024,M,Mean,5/10/13,4.510948905,four,Wh,1,,Basket,Basket,No,Mean,Nice,Look 1st asked,1
+1025,F,Mean,5/10/13,4.516423358,four,As,1,,Closet,Closet,No,Mean,Nice,Look 1st asked,1
+1026,F,Mean,5/11/13,3.852683461,three,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1027,F,Mean,5/11/13,5.434102464,five,As,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1028,M,Mean,5/11/13,2.25,younger,Wh,0,was too young,Basket,Basket,No,Nice,Mean,Look 1st asked,1
+1029,M,Nice,5/11/13,4.650547445,four,Wh,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1030,M,Nice,5/11/13,4.650547445,four,Wh,0,did not do the task,,,,,Nice,Look 1st asked,1
+1031,M,Mean,5/11/13,5.64215878,five,Mix-as/Wh,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1032,F,Mean,5/11/13,5.368400469,five,Wh,0,99,Basket,Basket,No,Mean,Nice,Look 1st asked,1
+1033,M,Nice,5/11/13,3.373493976,three,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1034,F,Nice,5/11/13,5.162408759,five,Wh,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1035,F,Mean,5/11/13,4.519160584,four,Wh,1,,Basket,Basket,No,Nice,Mean,Look 1st asked,1
+1036,F,Mean,5/11/13,4.115553122,four,Wh,1,,Closet,Basket,No,Nice,Mean,Look 1st asked,1
+1037,M,Nice,5/11/13,3.8033954,three,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1038,F,Nice,5/11/13,5.508017208,five,As,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1039,F,Mean,5/17/13,5.458740712,five,Phil,1,,Basket,Basket,Yes,Nice,Mean,Look 1st asked,1
+1040,F,Mean,5/17/13,5.55455612,five,Phil,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1041,M,Nice,5/17/13,5.296532847,five,Mixed -AS/WH,1,,Closet,Basket,Yes,Nice,Mean,Look 1st asked,1
+1042,M,Nice,5/17/13,4.464416058,four,As,1,,Closet,Basket,Yes,Mean,Mean,Look 1st asked,1
+1043,F,Mean,5/17/13,3.469331873,three,Mixed-Wh/As ,1,,Closet,Closet,Yes,Nice,Mean,Look 1st asked,1
+1044,M,Mean,5/17/13,5.926867423,five,As,1,,Closet,Basket,No,Nice,Mean,Look 1st asked,1
+1045,F,Nice,5/18/13,3.189596167,three,Wh,0,did not pay attention,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1046,F,Nice,5/18/13,4.378422782,four,As,0,did not pay attention,Closet,Closet,Yes,Nice,Mean,Look 1st asked,1
+1047,F,Mean,5/18/13,3.485761227,three,Mixed,1,,Basket,Basket,No,Mean,Nice,Look 1st asked,1
+1048,M,Mean,5/18/13,3.896495071,three,Wh,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1049,M,Nice,5/18/13,4.266155531,four,Middle eastern,1,,Closet,Closet,Yes,Nice,Mean,Look 1st asked,1
+1050,F,Nice,5/18/13,3.400876232,three,As,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1051,F,Nice,5/18/13,4.814781022,four,Wh,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1052,F,Nice,5/18/13,3.282683094,three,Wh,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1053,F,Nice,5/24/13,3.162217659,three,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1054,F,Nice,5/24/13,4.000547645,four,Wh,1,,Closet,Basket,Yes,Nice,Mean,Look 1st asked,1
+1055,M,Nice,5/24/13,3.244353183,three,Br,1,,Closet,Closet,Yes,,Mean,Look 1st asked,1
+1056,M,Mean,5/25/13,4.309967141,four,As,0,did not understand,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1057,M,Mean,5/25/13,3.329226557,three,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1058,M,Mean,5/25/13,3.647316539,three,Wh,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1059,F,Mean,5/25/13,4.562956204,four,Wh,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1060,M,Mean,5/25/13,3.877327492,three,Wh,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1061,M,Mean,5/25/13,3.721248631,three,Wh,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1062,M,Nice,5/25/13,3.614457831,three,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1063,F,Nice,5/25/13,4.315443593,four,Wh,0,interference by others,Closet,Basket,Yes,Nice,Mean,Look 1st asked,1
+1064,F,Mean,5/31/13,3.47754655,three,As,1,,Closet,Closet,Yes,Mean,Mean,Look 1st asked,1
+1065,F,Nice,5/31/13,2.967830253,younger,Phil,0,was too young,Closet,Closet,Yes,,,Look 1st asked,1
+1066,F,Nice,6/7/13,3.107460643,three,Mix - Wh/as,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1067,F,Mean,6/7/13,4.04162103,four,Wh,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1068,M,Nice,6/7/13,4.359255203,four,As,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1069,M,Mean,6/7/13,4.697080292,four,Br,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1070,F,Mean,6/7/13,4.408543264,four,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1071,F,Mean,6/8/13,3.485761227,three,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1072,F,Nice,6/8/13,3.986856517,three,Wh,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1073,F,Mean,6/8/13,4.913321168,four,Wh,1,,Closet,Basket,No,Mean,Nice,Look 1st asked,1
+1074,F,Nice,6/8/13,3.704819277,three,Kr,0,interference by others,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1075,F,Nice,6/8/13,4.164841183,four,As,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1076,M,Mean,6/8/13,4.164841183,four,As,1,,Closet,Basket,Yes,Mean,Mean,Look 1st asked,1
+1077,F,Nice,6/8/13,4.123767798,four,Wh,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1078,M,Nice,6/8/13,3.833515882,three,Wh,1,,Basket,Closet,Yes,Nice,Nice,Look 1st asked,1
+1079,F,Mean,6/14/13,4.883211679,four,As,1,,Basket,Basket,No,Mean,Nice,Look 1st asked,1
+1080,F,Mean,6/14/13,3.93483023,three,Wh/As Mix,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1081,M,Mean,6/14/13,3.896495071,three,Br,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1082,F,Mean,6/14/13,4.361993428,four,As,0,fussed out,,,,,Nice,Look 1st asked,1
+1083,M,Mean,6/14/13,4.650547445,four,As,1,,Basket,Closet,Yes,Mean,Nice,Look 1st asked,1
+1085,F,Mean,6/14/13,3.055441478,three,Wh,1,,Closet,Closet,No,Mean,Nice,Look 1st asked,1
+1086,F,Mean,6/15/13,3.559693319,three,Mix,1,,Closet,Closet,No,Mean,Nice,Look 1st asked,1
+1087,M,Mean,6/15/13,4.255202629,four,As,1,,Closet,Basket,No,Mean,Nice,Look 1st asked,1
+1088,F,Mean,6/15/13,3.427789185,three,Wh,1,,Closet,Closet,No,Mean,Mean,Look 1st asked,1
+1089,F,Mean,6/15/13,3.266255989,three,Ind,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1090,M,Nice,6/15/13,3.241615332,three,Wh,1,,Basket,Closet,Yes,Mean,Nice,Look 1st asked,1
+1091,M,Nice,6/21/13,4.375684556,four,Wh,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1092,F,Nice,6/21/13,3.78422782,three,Wh,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1093,F,Nice,6/22/13,3.849945235,three,As,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1094,M,Nice,6/22/13,3.756845564,three,Span,1,,Closet,Closet,Yes,Nice,Mean,Look 1st asked,1
+1095,M,Nice,6/22/13,3.510405257,three,Wh,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1096,M,Nice,6/22/13,4.26067908,four,As,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1097,F,Nice,6/22/13,3.625410734,three,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1098,M,Mean,6/22/13,3.93483023,three,As,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1099,M,Nice,6/22/13,4.636861314,four,As,1,,Basket,Basket,No,Nice,Mean,Look 1st asked,1
+1100,F,Nice,6/22/13,4.000547645,four,As,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1101,F,Mean,6/29/13,4.02245345,four,Wh,1,,Closet,Closet,No,Mean,Nice,Look 1st asked,1
+1102,M,Mean,6/29/13,3.019849418,three,As,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1103,F,Nice,6/29/13,3.405886379,three,Wh,1,,Basket,Closet,Yes,Nice,Nice,Look 1st asked,1
+1104,F,Nice,6/29/13,4.91879562,four,As,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1105,F,Mean,7/5/13,3.973165389,three,As,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1106,M,Mean,7/5/13,3.888280394,three,As,1,,Basket,Closet,No,Nice,Mean,Look 1st asked,1
+1107,M,Nice,7/5/13,3.181382615,three,As,0,interference by others,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1108,M,Nice,7/5/13,3.318275154,three,Middle eastern,0,did not pay attention,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1109,M,Nice,7/6/13,3.674698795,three,As,0,language issues,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1110,F,Nice,7/6/13,3.915662651,three,Wh,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1111,M,Nice,7/23/13,4.340087623,four,As,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1112,M,Mean,7/23/13,3.523613963,three,As,0,did not complete task,,,,,Nice,Look 1st asked,1
+1113,M,Nice,7/23/13,4.364731654,four,Wh,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1114,F,Mean,7/23/13,4.441401972,four,As,1,,Closet,Basket,Yes,Nice,Mean,Look 1st asked,1
+1115,M,Nice,7/26/13,4.011500548,four,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1116,F,Mean,7/26/13,3.814348302,three,As,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1117,M,Nice,7/26/13,3.721248631,three,Wh,1,,Basket,Basket,Yes,Mean,Mean,Look 1st asked,1
+1118,M,Nice,7/27/13,5.255474453,five,Wh,0,was too old,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1119,F,Mean,7/27/13,3.729463308,three,Wh,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1120,M,Nice,7/27/13,4.664233577,four,As,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1121,F,Nice,7/27/13,3.8033954,three,Spanish,0,language issues,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1122,F,Mean,7/27/13,3.765060241,three,Wh,1,,Basket,Basket,No,Mean,Nice,Look 1st asked,1
+1123,F,Nice,8/1/13,3.307323751,three,Wh,1,,Closet,Basket,No,Nice,Mean,Look 1st asked,1
+1124,M,Nice,8/1/13,4.578313253,four,Wh,1,,Closet,Basket,Yes,Nice,Mean,Look 1st asked,1
+1125,M,Nice,8/1/13,3.575633128,three,As,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1126,F,Mean,8/1/13,4.408543264,four,As,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1127,F,Mean,8/2/13,3.984118291,three,Wh,1,,Closet,Basket,Yes,Nice,Mean,Look 1st asked,1
+1128,F,Mean,8/2/13,4.504381161,four,Wh/As,1,,Closet,Basket,No,Nice,Mean,Look 1st asked,1
+1129,F,Mean,8/2/13,2.893908282,younger,Wh,0,was too young,Basket,,Yes,Nice,Mean,Look 1st asked,1
+1130,F,Mean,8/2/13,4.697080292,four,Wh,1,,Basket,Basket,Yes,Nice,Mean,Look 1st asked,1
+1131,F,Nice,8/2/13,3.564681725,three,Wh,0,interference by others,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1132,F,Mean,8/2/13,3.545516769,three,Mix - Wh/br,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1133,F,Nice,8/3/13,4.575575027,four,As/Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1134,M,Mean,8/3/13,3.279945243,three,Br,0,did not do the task,,,,,Nice,Look 1st asked,1
+1135,F,Nice,8/3/13,4.137458927,four,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1136,F,Mean,8/3/13,3.918400876,three,Wh,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1137,M,Nice,8/3/13,3.501711157,three,As,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1138,M,Mean,8/6/13,4.561883899,four,As,1,,Closet,Closet,Yes,Nice,Mean,Look 1st asked,1
+1139,F,Nice,8/6/13,2.762491444,younger,As,0,was too young,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1140,M,Nice,8/9/13,4.954379562,four,As,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1141,F,Nice,8/9/13,3.104722793,three,Wh,0,training,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1142,F,Nice,8/9/13,3.299110198,three,Mix-indian/Bl,0,training,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1143,M,Nice,8/9/13,4.312705367,four,Br,0,training,Closet,Basket,Yes,Nice,Mean,Look 1st asked,1
+1144,F,Mean,8/10/13,3.559206023,three,Mix as wh,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1145,M,Nice,8/10/13,4.164841183,four,Korean,0,language issues,Basket,Basket,Yes,Nice,Mean,Look 1st asked,1
+1146,F,Mean,8/10/13,4.200438116,four,Wh,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1147,M,Mean,8/10/13,4.285323111,four,Mix,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1148,M,Nice,8/10/13,3.247091034,three,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1149,M,Nice,8/10/13,3.929353779,three,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1150,M,Nice,8/10/13,3.195071869,three,Wh,0,did not do the task,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1151,F,Nice,8/10/13,2.934976044,younger,Wh,0,was too young,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1152,M,Nice,8/10/13,4.208652793,four,As,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1153,M,Nice,8/11/13,3.394934976,three,As,0,training,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1154,M,Nice,8/11/13,4.227820372,four,Mix: as/Wh ,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1155,M,Mean,8/12/13,3.047227926,three,Wh,0,training,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1156,F,,,,younger,,0,was too young,,,,,,,
+1157,F,Nice,8/13/13,6.107547908,older,Mix,0,was too old,Basket,Basket,No,Nice,Nice,Look 1st asked,1
+1158,M,Nice,8/14/13,3.718510405,three,Wh,1,,Basket,Closet,Yes,Nice,Nice,Look 1st asked,1
+1159,F,Nice,8/14/13,2.520985401,younger,Wh,0,was too young,Closet,?,Yes,Nice,Nice,Look 1st asked,1
+1160,M,Mean,8/14/13,4.008762322,four,Wh,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1161,F,Mean,8/14/13,3.921139102,three,Wh,1,,Basket,Closet,Yes,Mean,Nice,Look 1st asked,1
+1162,M,Mean,8/14/13,3.088295688,three,Wh,1,,Basket,Basket,Yes,Nice,Mean,Look 1st asked,1
+1163,F,Nice,8/14/13,3.964950712,three,As,1,,Basket,Basket,Yes,Nice,Mean,Look 1st asked,1
+1164,F,Nice,8/15/13,3.767798467,three,As,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1165,F,Nice,8/15/13,3.028062971,three,Ind,0,99,Closet,Closet,Yes,Mean,Mean,Look 1st asked,1
+1166,F,Nice,8/15/13,4.724452555,four,Wh,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1167,F,Nice,8/15/13,3.370294319,three,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1168,M,Mean,8/15/13,3.112936345,three,Wh,1,,Basket,Closet,Yes,Nice,Nice,Look 1st asked,1
+1169,F,Mean,8/15/13,3.041752225,three,Wh,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1170,M,Nice,8/15/13,2.839151266,younger,Wh,0,was too young,Closet,Closet,,,,Look 1st asked,1
+1171,M,Mean,8/15/13,0.230136986,younger,Wh,0,experimenter error (age recorded incorrectly),Closet,Closet,Yes,Mean,Mean,Look 1st asked,1
+1172,F,Mean,8/15/13,2.869267625,younger,Mix as Wh,0,was too young,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1173,F,Mean,8/15/13,4.101861993,four,Br,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1174,M,Mean,8/16/13,4.642335766,four,Wh,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1175,F,Mean,8/16/13,4.372946331,four,As,1,,Basket,Basket,No,Mean,Nice,Look 1st asked,1
+1176,F,Nice,8/16/13,3.181382615,three,As,0,interference by others,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1177,M,Nice,8/16/13,4.027929901,four,Wh,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1178,M,Mean,8/16/13,4.027929901,four,Wh ,1,,Basket,Closet,Yes,Nice,Mean,Look 1st asked,1
+1179,M,Nice,8/17/13,3.33744011,three,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1180,M,Mean,8/17/13,3.318275154,three,Mix,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1181,F,Nice,8/17/13,4.288061336,four,White,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1182,M,Mean,8/17/13,4.049835706,four,Asian,0,interference by others,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1183,F,Mean,8/17/13,2.893908282,younger,As,0,was too young,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1184,F,Nice,8/18/13,4.959854015,four,As,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1185,F,Mean,8/18/13,4.820255474,four,White ,1,,Closet,Basket,No,Mean,Nice,Look 1st asked,1
+1186,M,Mean,8/18/13,4.784671533,four,White,0,did not complete task,Closet,Basket,,Mean,,Look 1st asked,1
+1187,F,Nice,8/18/13,4.482475356,four,White,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1188,F,Mean,8/18/13,5.162408759,five,Asian,0,was too old,,,,,,Look 1st asked,1
+1189,F,Nice,8/18/13,3.594798084,three,White,1,,Closet,Closet,Yes,Mean,No,Look 1st asked,1
+1190,M,Mean,8/18/13,3.677437021,three,White,0,interference by others,Closet,Basket,Yes,Mean,Yes,Look 1st asked,1
+1191,M,Nice,8/20/13,3.077344285,three,Asian,1,,Closet,Closet,Yes,Nice,Yes,Look 1st asked,1
+1192,M,Nice,8/20/13,3.559206023,three,White,1,,Closet,Basket,Yes,Nice,Yes,Look 1st asked,1
+1193,M,Nice,8/22/13,4.04162103,four,White,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1194,M,Nice,8/22/13,3.726725082,three,As,1,,Closet,Basket,No,Nice,Nice,Look 1st asked,1
+1195,M,Mean,8/22/13,3.825301205,three,Mix bl Wh ,1,,Closet,Basket,No,Mean,Nice,Look 1st asked,1
+1196,M,Mean,8/22/13,4.531763417,four,Mix as Wh,1,,Closet,Closet,No,Mean,Nice,Look 1st asked,1
+1197,M,Nice,8/22/13,4.17305586,four,Ind,1,,Basket,Closet,Yes,Nice,Nice,Look 1st asked,1
+1198,F,Mean,8/22/13,4.17305586,four,Ind,1,,Closet,Closet,Yes,Nice,Mean,Look 1st asked,1
+1199,M,Mean,8/22/13,2.315693431,younger,Wh,0,was too young,Closet,,,,,Look 1st asked,1
+1200,M,Nice,8/22/13,2.452554745,younger,Persian,0,was too young,Closet,,,,,Look 1st asked,1
+1201,F,Nice,8/22/13,4.4550931,four,As,0,language issues,Closet,Basket,No,Mean,No,Look 1st asked,1
+1202,F,Nice,8/22/13,3.729463308,three,Wh,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1203,M,Mean,8/22/13,4.864051095,four,Wh,1,,Closet,Basket,No,Mean,Nice,Look 1st asked,1
+1204,M,Nice,8/23/13,3.608487337,three,Wh,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1205,F,Mean,8/23/13,4.107338445,four,Wh,1,,Closet,Basket,Yes,Nice,Mean,Look 1st asked,1
+1206,M,Nice,8/23/13,4.490690033,four,As,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1207,M,Nice,8/23/13,3.685651698,three,Mix - as/Wh ,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1208,F,Mean,8/24/13,4.424972618,four,As,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1209,M,Mean,8/24/13,3.770536692,three,As,0,did not pay attention,Closet,Closet,Yes,Mean,Yes,Look 1st asked,1
+1210,F,Nice,8/24/13,3.329226557,three,Wh,1,,Closet,Closet,Yes,Nice,Mean,Look 1st asked,1
+1211,F,Mean,8/24/13,3.630390144,three,Wh,0,did not understand,Closet,Closet,Yes,Mean,No,Look 1st asked,1
+1212,M,Nice,8/24/13,4.405805038,four,Wh,0,"No comments, so exclude to be safe",Closet,Basket,No,Mean,Yes,Look 1st asked,1
+1213,F,Mean,8/24/13,4.175794085,four,Wh,0,had previously done the task,Basket,Basket,Yes,Mean,Yes,Look 1st asked,1
+1214,F,Nice,8/24/13,5.126824818,five,Wh,0,was too old,Closet,Basket,Yes,Nice,No,Look 1st asked,1
+1215,M,Mean,8/24/13,5.011861314,five,Wh/as,0,was too old,Closet,Basket,Yes,Mean,Yes,Look 1st asked,1
+1216,M,Nice,8/24/13,3.115674196,three,Wh,1,,Basket,Closet,Yes,Nice,No,Look 1st asked,1
+1217,F,Mean,8/24/13,3.707557503,three,Wh/as,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1218,F,Nice,8/25/13,3.214236824,three,Wh,0,did not understand,Closet,Closet,No,Mean,No,Look 1st asked,1
+1219,M,Nice,8/25/13,5.455291971,five,Wh,0,was too old,Closet,Closet,Yes,Nice,Yes,Look 1st asked,1
+1220,M,Nice,8/25/13,2.658453114,younger,Wh,0,was too young,,,,,,Look 1st asked,1
+1221,F,Mean,8/25/13,4.773722628,four,Wh,1,,Basket,Closet,Yes,Mean,Nice,Look 1st asked,1
+1222,F,Mean,8/25/13,3.02532512,three,Wh,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1223,F,Nice,8/25/13,4.444140197,four,Wh,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1224,F,Mean,8/25/13,5.803676183,five,Wh,0,"No comments, so exclude to be safe",Basket,Closet,Yes,Mean,Yes,Look 1st asked,1
+1225,M,Nice,8/25/13,4.825729927,four,Wh,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1226,F,Mean,8/26/13,3.498973306,three,Wh,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1227,M,Mean,8/26/13,3.498973306,three,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1228,M,Nice,8/26/13,3.151266256,three,Wh,1,,Basket,Closet,Yes,Nice,Nice,Look 1st asked,1
+1229,M,Mean,8/26/13,3.877327492,three,Wh,0,did not complete task,,,,,,Look 1st asked,1
+1230,F,Nice,8/26/13,2.710472279,younger,Wh,0,was too young,Closet,Closet,Yes,Mean,Yes,Look 1st asked,1
+1231,F,Mean,8/26/13,3.762322015,three,Wh,1,,Basket,Closet,No,Mean,Nice,Look 1st asked,1
+1232,M,Nice,8/26/13,3.518138261,three,As,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1233,F,Mean,8/26/13,3.713033954,three,Wh,1,,Closet,Closet,No,Mean,Mean,Look 1st asked,1
+1234,F,Nice,8/26/13,4.318181818,four,Wh,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1235,M,Mean,8/26/13,3.017111567,three,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1236,F,Nice,8/27/13,2.973305955,younger,Wh,0,was too young,Basket,Basket,Yes,Nice,Yes,Look 1st asked,1
+1237,M,Nice,8/27/13,4.724452555,four,Wh,1,,Basket,Closet,Yes,Nice,Nice,Look 1st asked,1
+1238,M,Nice,8/27/13,3.247091034,three,Wh,0,"No comments, so exclude to be safe",Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1239,F,Mean,8/27/13,2.877481177,younger,Wh,0,was too young,Closet,Closet,Yes,Nice,Mean,Look 1st asked,1
+1240,M,Mean,8/27/13,3.23340178,three,In/Wh.?,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1241,M,Mean,8/27/13,5.572992701,five,In/Wh?,0,"No comments, so exclude to be safe",Closet,Basket,No,Mean,Nice,Look 1st asked,1
+1242,F,Nice,8/31/13,4.331872946,four,As,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1243,F,Mean,8/31/13,4.740875912,four,Wh,1,,Basket,Closet,Yes,Mean,Nice,Look 1st asked,1
+1244,F,Nice,8/31/13,4.329134721,four,As,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1245,F,Nice,8/31/13,4.935218978,four,Wh,1,,Basket,Basket,No,Mean,Mean,Look 1st asked,1
+1246,F,Mean,8/31/13,4.825729927,four,Wh,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1247,F,Nice,8/31/13,3.036276523,three,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1248,F,,9/6/13,3.655030801,three,Wh,0,was not assigned to do the task,Closet,Closet,Yes,Nice,Mean,,1
+1249,M,Nice,9/6/13,4.386637459,four,Wh,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1250,M,Mean,9/6/13,4.654983571,four,Wh,1,,Basket,Basket,No,Mean,Nice,Look 1st asked,1
+1251,M,,9/8/13,3.997809419,three,Wh,0,was not assigned to do the task,,,,,,,0
+1252,M,Mean,9/8/13,4.17305586,four,Mix As Wh,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1253,F,,9/8/13,2.978781656,younger,Mix as Wh,0,was not assigned to do the task,,,,,,,0
+1254,M,Nice,9/8/13,4.839416058,four,Wh,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1255,M,Mean,9/8/13,4.044359255,four,Wh,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1256,M,,9/8/13,3.1676933,three,Mix-LatiNo?,0,was not assigned to do the task,,,,,,,0
+1257,F,Mean,9/8/13,5.866640594,five,Mix-LatiNo?,1,,Basket,Basket,No,Mean,Nice,Look 1st asked,1
+1258,F,,9/12/13,3.926615553,three,Wh,0,was not assigned to do the task,,,,,,,0
+1259,F,Mean,9/12/13,4.671412924,four,Wh,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1260,F,Mean,9/12/13,3.51266256,three,Wh,0,"No comments, so exclude to be safe",,,,,,Look 1st asked,1
+1261,F,Nice,9/12/13,2.735112936,younger,Wh,0,was too young,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1262,F,Mean,9/12/13,4.181270537,four,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1263,M,Mean,9/13/13,3.518138261,three,Wh,0,"No comments, so exclude to be safe",Basket,Basket,No,Mean,Nice,Look 1st asked,1
+1264,F,Nice,9/13/13,3.792442497,three,Wh,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1265,F,Mean,9/13/13,3.260780287,three,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1266,F,Mean,9/13/13,3.844468784,three,Wh,1,,Basket,Closet,Yes,Nice,Mean,Look 1st asked,1
+1267,M,Nice,9/13/13,3.058179329,three,Wh,0,"No comments, so exclude to be safe",Closet,Closet,Yes,Mean,Mean,Look 1st asked,1
+1268,F,Mean,9/15/13,4.101861993,four,As,1,,Closet,Basket,No,Mean,Nice,Look 1st asked,1
+1269,M,Nice,9/15/13,4.074479737,four,Wh,0,"No comments, so exclude to be safe",Basket,Closet,Yes,Nice,Nice,Look 1st asked,1
+1270,M,Nice,9/15/13,4.26067908,four,As,0,"No comments, so exclude to be safe",Closet,Closet,Yes,Nice,Mean,Look 1st asked,1
+1271,M,Mean,9/15/13,4.279846659,four,Wh,1,,Basket,Basket,,Mean,Nice,Look 1st asked,1
+1272,M,Mean,9/15/13,4.63033954,four,Wh,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1273,M,,9/20/13,3.866374589,three,Wh,0,was not assigned to do the task,,,,,,,0
+1274,F,Nice,9/20/13,6.274540477,older,Israeli,0,was too old,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1275,M,,9/20/13,3.37303217,three,Wh,0,was not assigned to do the task,,,,,,,0
+1276,M,Nice,9/20/13,4.501642935,four,As,0,"No comments, so exclude to be safe",Basket,Closet,Yes,Nice,Nice,Look 1st asked,1
+1277,F,Mean,9/20/13,4.244249726,four,Wh,1,,Closet,Basket,No,Mean,Nice,Look 1st asked,1
+1278,M,Mean,9/22/13,5.877590927,five,Wh,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1279,F,Mean,9/22/13,3.997809419,three,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1280,F,Nice,9/22/13,6.63863903,older,Wh,0,was too old,Basket,Basket,No,Mean,Nice,Look 1st asked,1
+1281,M,Mean,9/22/13,3.770536692,three,Wh,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1282,M,Nice,9/22/13,3.838992333,three,Wh,0,"No comments, so exclude to be safe",Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1283,M,Nice,9/26/13,4.003285871,four,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1284,F,,9/27/13,3.482546201,three,Wh/As,0,was not assigned to do the task,,,,,,,0
+1285,F,Nice,9/27/13,4.299014239,four,Wh,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1286,M,,9/27/13,3.052703628,three,Wh,0,was not assigned to do the task,,,,,,,0
+1287,M,,9/27/13,3.000684463,three,Wh/Bl,0,was not assigned to do the task,,,,,,,0
+1288,F,,9/27/13,3.611225188,three,Wh,0,was not assigned to do the task,,,,,,,1
+1289,F,Mean,9/27/13,4.760036496,four,Wh/As,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1290,F,Nice,9/29/13,3.737166324,three,As-Indian ,0,language issues,,,,,,Look 1st asked,1
+1291,F,Nice,9/29/13,3.849945235,three,As,0,language issues,,,,,,Look 1st asked,1
+1292,F,,9/29/13,3.849945235,three,Wh,0,was not assigned to do the task,,,,,,,0
+1293,F,Mean,9/29/13,5.419708029,five,Hispanic,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1294,F,Nice,9/29/13,5.811888932,five,As,1,,Basket,Closet,Yes,Nice,Nice,Look 1st asked,1
+1295,F,Mean,9/29/13,3.507186858,three,As,0,language issues,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1296,F,Nice,9/29/13,4.12924425,four,Wh,1,,Closet,Basket,Yes,Nice,Nice,Think 1st asked,2
+1297,F,,9/29/13,3.888280394,three,Hispanic,0,was not assigned to do the task,,,,,,,0
+1298,M,,9/29/13,3.904709748,three,Hispanic,0,developmental disorder,Basket,Basket,Yes,Mean,Nice,,2
+1299,F,Mean,9/29/13,3.490759754,three,Wh,0,did not do the task,,,,,,Look 1st asked,1
+1300,F,,9/29/13,3.737166324,three,As,0,was not assigned to do the task,,,,,,,0
+1301,F,,9/29/13,3.712525667,three,Arab,0,was not assigned to do the task,,,,,,,0
+1302,M,Mean,9/29/13,5.447080292,five,Wh,1,,Closet,,Yes,Nice,Nice,Think 1st asked,2
+1303,F,Nice,9/29/13,4.268893757,four,As,1,,Basket,Basket,No,Nice,Nice,Think 1st asked,2
+1304,M,Mean,10/4/13,4.033406353,four,Wh,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1305,M,Mean,10/4/13,3.904709748,three,Wh,1,,Closet,Basket,Yes,Mean,Nice,Think 1st asked,2
+1306,M,,10/4/13,3.885542169,three,Wh,0,was not assigned to do the task,,,,,,,0
+1307,M,,10/4/13,3.274469541,three,Wh,0,was not assigned to do the task,,,,,,,0
+1308,F,Nice,10/4/13,4.726177437,four,Mix-Wh/As,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1309,F,Nice,10/5/13,5.15419708,five,Wh,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1310,M,Nice,10/5/13,3.085557837,three,Wh,0,did not understand,,,,,,Think 1st asked,2
+1311,M,Mean,10/5/13,5.321167883,five,As,1,,Closet,Closet,Yes,Mean,Nice,Think 1st asked,2
+1312,M,Nice,10/5/13,3.167693361,three,As,0,was not assigned to do the task,,,,,,,0
+1313,F,Nice,10/5/13,4.008762322,four,Br,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1314,M,Nice,10/5/13,5.143248175,five,Wh,1,,Basket,Basket,Yes,Nice,Nice,Think 1st asked,2
+1315,M,,10/5/13,3.460643395,three,As,0,was not assigned to do the task,,,,,,,0
+1316,M,,10/5/13,3.866374589,three,As,0,was not assigned to do the task,,,,,,,0
+1317,M,,10/5/13,3.866374589,three,As,0,was not assigned to do the task,,,,,,,0
+1318,F,Nice,10/5/13,5.241788321,five,Wh,1,,Basket,Basket,,Nice,Nice,Think 1st asked,2
+1319,M,,10/11/13,3.186858316,three,Wh,0,was not assigned to do the task,,,,,,,0
+1320,M,Nice,10/11/13,4.167579409,four,Brown,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1321,F,Nice,10/11/13,4.236035049,four,Wh,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1322,F,Nice,10/11/13,4.707009858,four,Wh,1,,Basket,Basket,Yes,Nice,Nice,Think 1st asked,2
+1323,F,Nice,10/11/13,5.22810219,five,Wh,0,training,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1324,F,Nice,10/11/13,5.622262774,five,Wh,0,training,Closet,Basket,Yes,Nice,Nice,Think 1st asked,2
+1325,M,Nice,10/12/13,5.575729927,five,Wh,1,,Basket,Basket,No,Nice,Mean,Think 1st asked,2
+1326,M,Mean,10/18/13,5.430656934,five,Wh,1,,Closet,Basket,Yes,Mean,Nice,Think 1st asked,2
+1327,M,Mean,10/18/13,5.044708029,five,Wh,1,,Basket,Basket,No,Nice,Mean,Think 1st asked,2
+1328,M,,10/25/13,3.945783133,three,Wh,0,was not assigned to do the task,,,,,,,
+1329,M,Mean,10/25/13,5.340328467,five,Ind,1,,Basket,Basket,Yes,Mean,Nice,Think 1st asked,2
+1330,F,Nice,10/25/13,5.715328467,five,Chinese/Ital,1,,Basket,Basket,Yes,Nice,Nice,Think 1st asked,2
+1331,F,,10/25/13,3.197809719,three,Bl/Wh,0,was not assigned to do the task,,,,,,,
+1332,M,,10/25/13,3.34017796,three,Wh,0,was not assigned to do the task,,,,,,,
+1333,F,Nice,10/27/13,4.383899233,four,Asian ,1,,Basket,Basket,No,Nice,Nice,Think 1st asked,2
+1334,M,Nice,10/27/13,3.764544832,three,Wh,1,,Basket,Closet,Yes,Mean,Nice,Think 1st asked,2
+1335,M,Nice,10/27/13,5.408759124,five,Iranian  white,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1336,M,Nice,10/27/13,5.384124088,five,Asian,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1337,F,Nice,11/1/13,4.345564074,four,Chinese/Spanish ,1,,Basket,Basket,Yes,Nice,Nice,Think 1st asked,2
+1338,M,Nice,11/1/13,4.899635036,four,Caucasian,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1341,F,,11/3/13,3.066392882,three,Caucasian/Native/Hispanic ,0,was not assigned to do the task,,,,,,Think 1st asked,2
+1342,M,Nice,11/3/13,5.066605839,five,Caucasian ,1,,Basket,Basket,Yes,Nice,Nice,Think 1st asked,2
+1343,M,Nice,11/3/13,4.36746988,four,Chinese,1,,Basket,Closet,Yes,Mean,Nice,Think 1st asked,2
+1344,M,,11/8/13,2.967830253,younger,Caucasian,0,was too young,,,,,,,0
+1345,F,Nice,11/8/13,3.789185489,three,Canadian Chinese ,1,,Basket,Closet,No,Mean,Nice,Think 1st asked,2
+1346,F,,11/8/13,3.529089665,three,Caucasian,0,was not assigned to do the task,,,,,,,0
+1347,M,Nice,11/8/13,2.750912409,younger,Canadian,0,was too young,Basket,Basket,No,Mean,Mean,Think 1st asked,2
+1348,M,Mean,11/15/13,4.131982475,four,Canadian/Chinese,1,,Basket,Basket,Yes,Mean,Nice,Think 1st asked,2
+1349,F,,11/15/13,3.526351814,three,"Did Not say, but appeared Caucasian ",0,was not assigned to do the task,,,,,,,0
+1350,F,,11/15/13,3.017111567,three,Caucasian ,0,was not assigned to do the task,,,,,,,0
+1351,M,,11/15/13,3.26899384,three,Canadian,0,was not assigned to do the task,,,,,,,0
+1352,F,,11/15/13,3.014373717,three,Caucasian,0,was not assigned to do the task,,,,,,,0
+1353,M,Mean,11/17/13,4.756297919,four,Caucasian ,1,,Closet,Basket,Yes,Mean,Nice,Think 1st asked,2
+1354,M,Nice,11/17/13,4.512595838,four,Indian Asian,1,,Basket,Basket,Yes,Nice,Nice,Think 1st asked,2
+1355,F,Mean,11/17/13,6.644114196,older,Indian Asian,0,was too old,Basket,Basket,Yes,Mean,Nice,Think 1st asked,2
+1356,F,Nice,11/17/13,4.89689781,four,Japanese White ,1,,Basket,Basket,Yes,Nice,Nice,Think 1st asked,2
+1357,F,,11/17/13,3.748117728,three,White,0,was not assigned to do the task,,,,,,,2
+1358,F,,11/17/13,3.748117728,three,White,0,was not assigned to do the task,,,,,,,
+1359,F,Mean,11/17/13,5.381386861,five,Asian,1,,Basket,Basket,Yes,Mean,Nice,Think 1st asked,2
+1360,F,Nice,11/17/13,6.496284709,older,White,0,was too old,Basket,Basket,Yes,Nice,Nice,Think 1st asked,2
+1361,F,,11/17/13,3.526351814,three,White,0,was not assigned to do the task,,,,,,,0
+1362,F,Mean,11/17/13,4.693318729,four,Norwegian French Irish,1,,Closet,Basket,No,Mean,Nice,Think 1st asked,2
+1363,F,Mean,11/22/13,3.457905544,three,Caucasian,1,,Closet,Closet,Yes,Mean,Nice,Think 1st asked,2
+1364,F,Nice,11/22/13,3.457905544,three,Caucasian,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1365,F,Nice,11/22/13,3.181382615,three,Asian/White,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1366,F,Nice,11/22/13,4.293537788,four,Mexican/European,1,,Closet,Closet,Yes,Mean,Mean,Think 1st asked,2
+1367,F,Mean,11/22/13,5.548357664,five,Mixed/European,1,,Closet,Closet,No,Mean,Mean,Think 1st asked,2
+1368,M,Mean,11/22/13,3.033538672,three,Asian/Caucasian ,1,,Closet,Closet,No,Mean,Nice,Think 1st asked,2
+1369,M,Nice,11/22/13,4.323658269,four,Caucasian,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1370,M,Nice,11/29/13,3.613963039,three,Caucasian,1,,Closet,Closet,Yes,Mean,Nice,Think 1st asked,2
+1371,M,Nice,11/29/13,3.170431211,three,Caucasian,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1372,M,Nice,11/29/13,4.186746988,four,Canadian,1,,Basket,Closet,Yes,Mean,Nice,Think 1st asked,2
+1373,M,Nice,12/1/13,5.058394161,five,Canadian/Spanish,1,,Closet,Basket,Yes,Nice,Nice,Think 1st asked,2
+1374,F,Nice,12/1/13,5.976143919,five,Asian,1,,Closet,Basket,Yes,Nice,Nice,Think 1st asked,2
+1375,M,Nice,12/1/13,3.917864476,three,Caucasian,1,,Closet,Basket,Yes,Nice,Nice,Think 1st asked,2
+1376,F,Nice,12/1/13,5.03649635,five,Middle Eastern,1,,Closet,Basket,Yes,Nice,Nice,Think 1st asked,2
+1377,F,Nice,12/1/13,5.674270073,five,Caucasian,1,,Closet,Closet,Yes,Nice,Mean,Think 1st asked,2
+1378,M,Nice,12/6/13,3.501711157,three, Canadian,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1379,F,Nice,12/6/13,3.748117728,three,Canadian-Chinese,1,,Closet,Basket,Yes,Nice,Nice,Think 1st asked,2
+1380,F,Mean,1/10/14,3.630887185,three,Caucasian,1,,Basket,Basket,Yes,Mean,Mean,Think 1st asked,2
+1381,M,Mean,1/10/14,4.419899589,four,Persian,1,,Basket,Basket,Yes,Nice,Nice,Think 1st asked,2
+1382,M,Mean,1/10/14,3.754107338,three,Caucasian,1,,Closet,Closet,Yes,Mean,Nice,Think 1st asked,2
+1383,M,Nice,1/10/14,3.754107338,three,Caucasian,0,developmental disorder,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1384,M,Nice,1/17/14,5.083691826,five,Canadian,1,,Basket,Closet,No,Nice,Nice,Think 1st asked,2
+1385,M,Mean,1/17/14,3.250273823,three,Canadian/Kiwi ,1,,Closet,Closet,No,Mean,Nice,Think 1st asked,2
+1386,F,Nice,1/17/14,3.168127054,three,Caucasian ,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1387,F,Mean,1/17/14,4.63623916,four,Caucasian ,1,,Basket,Basket,No,Mean,Nice,Think 1st asked,2
+1388,M,Nice,1/18/14,3.504928806,three,Caucasian,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1389,M,Nice,1/18/14,5.346499804,five,Filipino-Caucasian,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1390,F,Nice,1/18/14,3.956736035,three,Caucasian,1,,Closet,Closet,Yes,Mean,Nice,Think 1st asked,2
+1391,F,Nice,1/18/14,4.170698311,four,Chinese ,1,,Basket,Basket,Yes,Nice,Nice,Think 1st asked,2
+1392,M,Mean,1/18/14,4.49383843,four,Indo-Canadian/white ,1,,Basket,Basket,Yes,Mean,Nice,Think 1st asked,2
+1393,F,Nice,1/18/14,3.543263965,three,European ,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1394,F,Mean,1/18/14,4.625285258,four,Caucasian ,1,,Closet,Closet,Yes,Mean,Nice,Think 1st asked,2
+1395,M,Mean,1/18/14,3.266703176,three,Caucasian ,0,did not pay attention,Closet,,,,,,2
+1396,M,Mean,1/18/14,4.740301232,four,Asian,1,,Closet,Basket,Yes,Mean,Nice,Think 1st asked,2
+1397,F,Nice,1/24/14,3.384446878,three,Caucasian,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1398,F,Nice,1/24/14,4.195344592,four,Caucasian ,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1399,M,Mean,1/24/14,5.338287055,five,Asian,0,did not complete task,Closet,Closet,No,Mean,Nice,Think 1st asked,2
+1400,F,Mean,1/24/14,4.49383843,four,Anglo-Saxon,1,,Basket,Basket,Yes,Mean,Nice,Think 1st asked,2
+1401,F,Nice,1/24/14,3.584337349,three,Japanese Caucasian ,0,did not complete task,Basket,Closet,Yes,Didn’t answer,Didn’t answer,Think 1st asked,2
+1402,F,Nice,1/25/14,3.493975904,three,Caucasian ,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1403,F,Mean,1/25/14,3.953997809,three,Caucasian ,1,,Basket,Basket,Yes,Mean,Nice,Think 1st asked,2
+1404,F,Nice,1/25/14,4.203560018,four,White,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1405,F,Nice,1/25/14,5.464215878,five,Caucasian ,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1406,M,Nice,1/25/14,5.809151349,five,East Indian ,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1407,M,Mean,1/25/14,5.809151349,five,East Indian ,1,,Closet,Closet,Yes,Mean,Nice,Think 1st asked,2
+1408,F,Mean,2/2/14,4.244637152,four,Caucasian ,1,,Closet,Basket,No,Mean,Nice,Think 1st asked,2
+1409,F,Nice,12/1/14,5.879507074,five,Aboriginal/English/French,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1410,F,Nice,2/2/14,4.244637152,four,Japanese Canadian ,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1411,F,Mean,2/2/14,4.187129165,four,Caucasian ,1,,Basket,Basket,No,Mean,Nice,Think 1st asked,2
+1412,F,Nice,2/2/14,3.510405257,three,Caucasian ,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1413,M,Nice,2/2/14,5.497066875,five,Caucasian ,1,,Basket,Basket,Yes,Nice,Nice,Think 1st asked,2
+1414,M,Nice,2/2/14,5.770825186,five,Caucasian ,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1415,M,Mean,2/2/14,3.13253012,three,Caucasian ,0,saw the task,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1416,M,Mean,2/2/14,5.72154869,five,Filipino/Egyptiam ,1,,Closet,Closet,Yes,Mean,Nice,Think 1st asked,2
+1417,F,Mean,2/2/14,3.940306681,three,Eastern European ,1,,Closet,Closet,Yes,Mean,Nice,Think 1st asked,2
+1418,M,Mean,2/2/14,3.184556407,three,Persian/Armenian ,1,,Basket,Basket,No,Mean,Nice,Think 1st asked,2
+1419,F,Nice,2/7/14,3.691128149,three,Caucasian ,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1420,M,Mean,2/7/14,3.272179628,three,Canadian ,1,,Basket,Basket,Yes,Nice,Nice,Think 1st asked,2
+1421,M,Mean,2/7/14,3.318729463,three,Caucasian,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1422,M,Mean,2/7/14,3.066392882,three,Caucasian ,1,,Closet,Closet,No,Nice,Nice,Think 1st asked,2
+1423,M,Mean,1/1/14,4.471930625,four,Caucasian ,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1424,M,Mean,2/7/14,4.222729347,four,Caucasian ,1,,Basket,Closet,No,Mean,Mean,Think 1st asked,2
+1425,F,Mean,2/7/14,3.729463308,three,Mix-Caucasian/FilipiNo ,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1426,M,Mean,2/7/14,4.838886353,four,Caucasian,1,,Basket,Closet,Yes,Mean,Nice,Think 1st asked,2
+1427,M,Nice,2/7/14,4.986764035,four,Canadian,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1428,F,Mean,2/7/14,5.795463434,five,South Asian,1,,Basket,Basket,Yes,Mean,Nice,Think 1st asked,2
+1429,M,Mean,2/7/14,4.575992697,four,Caucasian,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1430,F,Nice,2/7/14,3.871851041,three,Caucasian ,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1431,M,Mean,2/7/14,3.97864184,three,Canadian,1,,Closet,Closet,Yes,Mean,Nice,Think 1st asked,2
+1432,M,Nice,2/7/14,3.417305586,three,Canadian,1,,Basket,Basket,No,Mean,Mean,Think 1st asked,2
+1433,M,Nice,2/14/14,3.863636364,three,Caucasian ,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1434,M,Mean,2/14/14,0.484931507,younger,Caucasian ,0,was too young,Closet,Closet,Yes,Mean,Nice,Think 1st asked,2
+1435,M,Nice,2/14/14,4.921040621,four,Aboriginal,1,,Basket,Basket,Yes,Nice,Nice,Think 1st asked,2
+1436,F,Mean,2/14/14,3.806133625,three,English,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1437,F,Nice,2/15/14,5.434102464,five,Canadian ,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1438,F,Nice,2/15/14,3.792442497,three,Canadian,1,,Closet,Closet,Yes,Nice,Mean,Think 1st asked,2
+1439,M,Mean,2/15/14,4.000547645,four,Caucasian ,1,,Closet,Closet,No,Mean,Mean,Think 1st asked,2
+1440,M,Nice,2/15/14,4.737562757,four,Caucasian/Asian,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1441,F,Mean,2/15/14,3.792442497,three,Chinese-Canadian ,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1442,F,Nice,2/15/14,3.606243154,three,Caucasian ,1,,Closet,Closet,Yes,Mean,Nice,Think 1st asked,2
+1443,M,Mean,2/15/14,4.784116842,four,Canadian ,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1444,F,Nice,2/15/14,4.387037882,four,Canadian,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1445,F,Mean,2/15/14,4.652670014,four,Chinese-Finnish ,1,,Closet,Basket,No,Mean,Nice,Think 1st asked,2
+1446,M,Mean,2/28/14,4.784116842,four,Swiss Canadian ,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1447,M,Nice,2/28/14,3.09650924,three,Caucasian ,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1448,M,Mean,2/28/14,5.003194888,five,Caucasian ,1,,Basket,Basket,Yes,Nice,Nice,Think 1st asked,2
+1449,M,Mean,2/28/14,3.359802848,three,Caucasian ,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1450,F,Mean,2/28/14,3.123887748,three,Caucasian ,0,saw the task,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1451,M,Nice,2/28/14,4.403468736,four,Chinese ,0,did not complete task,Closet,Closet,Yes,No answer,No answer,Think 1st asked,2
+1452,M,Nice,2/28/14,3.600766703,three,Caucasian ,1,,Basket,Closet,Yes,Mean,Nice,Think 1st asked,2
+1453,F,Nice,3/1/14,5.872115761,five,Caucasian ,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1454,F,Mean,3/1/14,4.439068918,four,Caucasian ,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1455,M,Nice,3/1/14,3.995071194,three,Chinese Canadian,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1456,M,Mean,3/1/14,3.244797371,three,Chinese Canadian,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1457,M,Nice,3/1/14,4.926517572,four,Caucasian ,1,,Basket,Basket,Yes,Nice,Nice,Think 1st asked,2
+1458,M,Nice,3/1/14,4.756732086,four,Russian ,0,interference by others,Basket,Closet,No,Nice,Mean,Think 1st asked,2
+1459,M,Mean,3/1/14,5.869378178,five,European ,1,,Basket,Basket,No,Mean,Nice,Think 1st asked,2
+1460,F,Mean,3/1/14,5.269847478,five,Canadian ,1,,Basket,Closet,Yes,Mean,Nice,Think 1st asked,2
+1461,F,Nice,3/1/14,4.247375628,four,Caucasian ,1,,Closet,Basket,Yes,Nice,Nice,Think 1st asked,2
+1462,M,Nice,3/7/14,4.863532634,four,Canadian ,1,,Basket,Basket,Yes,Nice,Nice,Think 1st asked,2
+1463,F,Mean,3/7/14,4.088170865,four,Canadian,1,,Closet,Closet,No,Mean,Nice,Think 1st asked,2
+1464,M,Mean,3/7/14,4.285714286,four,Canadian ,1,,Basket,Basket,No,Mean,Nice,Think 1st asked,2
+1465,M,Nice,3/7/14,5.129164765,five,Caucasian ,1,,Closet,Basket,Yes,Nice,Mean,Look 1st asked,1
+1466,F,Nice,3/7/14,4.17305586,four,Caucasian ,1,,Basket,Basket,Yes,Nice,Nice,Think 1st asked,2
+1467,F,Nice,3/8/14,5.746186938,five,Caucasian ,1,,Closet,Basket,Yes,Nice,Mean,Look 1st asked,1
+1468,F,Mean,3/8/14,5.497066875,five,Canadian,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1469,M,Mean,3/8/14,5.529917873,five,Caucasian ,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1470,F,Nice,3/8/14,5.371138052,five,Canadian ,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1471,F,Mean,3/8/14,4.737562757,four,Caucasian ,1,,Basket,Basket,No,Mean,Nice,Think 1st asked,2
+1472,F,Mean,3/8/14,5.653109112,five,Caucasian ,1,,Basket,Basket,Yes,Mean,Nice,Think 1st asked,2
+1473,M,Nice,3/8/14,4.644454587,four,Canadian,1,,Closet,Closet,Yes,Nice,Mean,Think 1st asked,2
+1474,M,Mean,3/14/14,4.280237335,four,Caucasian ,1,,Basket,Closet,Yes,Mean,Nice,Think 1st asked,2
+1475,M,Nice,3/14/14,4.696485623,four,Caucasian ,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1476,F,Nice,3/14/14,4.189485214,four,European,1,,Basket,Basket,No,Nice,Nice,Think 1st asked,2
+1477,F,Mean,3/14/14,5.197626654,five,Caucasian,1,,Basket,Basket,Yes,Mean,Nice,Think 1st asked,2
+1478,F,Nice,3/14/14,5.137380192,five,Caucasian,1,,Basket,Closet,No,Nice,Nice,Think 1st asked,2
+1479,M,Nice,3/15/14,3.30230011,three,Canadian,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1480,F,Mean,3/15/14,4.819717024,four,Chinese,1,,Closet,Closet,No,Mean,Nice,Think 1st asked,2
+1481,F,Mean,3/15/14,5.319123973,five,Canadian ,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1482,M,Mean,3/15/14,3.929353779,three,UK,1,,Closet,Closet,Yes,Mean,Nice,Think 1st asked,2
+1483,M,Nice,3/15/14,5.896754009,five,1/2 panama 1/2 Canaa,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1484,M,Mean,3/15/14,5.499804458,five,First Nations ,1,,Basket,Closet,Yes,Mean,Nice,Think 1st asked,2
+1485,M,Mean,3/15/14,4.02245345,four,Caucasian/Chinese,1,,Closet,Closet,Yes,Mean,Nice,Think 1st asked,2
+1486,M,Nice,3/15/14,4.789593793,four,Canadian ,1,,Closet,Basket,Yes,Nice,Nice,Think 1st asked,2
+1487,F,Nice,3/19/14,4.674577818,four,Canadian ,1,,Basket,Basket,Yes,Nice,Nice,Think 1st asked,2
+1488,F,Nice,3/19/14,3.756845564,three,White,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1489,M,Mean,3/19/14,4.655408489,four,Caucasian ,1,,Closet,Basket,Yes,Nice,Nice,Think 1st asked,2
+1490,F,Mean,3/19/14,4.655408489,four,Canadian ,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1491,M,Nice,3/19/14,5.40398905,five,Hindu,1,,Basket,Closet,Yes,Mean,Nice,Look 1st asked,1
+1492,F,Mean,3/19/14,5.688697693,five,White,0,experimenter error,Basket,Basket,Yes,Mean,Nice,Think 1st asked,2
+1493,M,Mean,3/19/14,5.189411228,five,Spanish/Dutch,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1494,F,Nice,3/21/14,4.115553122,four,Caucasian ,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1495,F,Mean,3/21/14,4.131982475,four,Caucasian,1,,Closet,Basket,No,Mean,Nice,Think 1st asked,2
+1496,M,Nice,3/21/14,5.954243254,five,Caucasian,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1497,F,Nice,3/21/14,4.608854404,four,Caucasian,1,,Closet,Closet,Yes,Nice,No answer,Think 1st asked,2
+1498,M,Mean,3/21/14,5.011410315,five,Mixed,1,,Basket,Closet,No,Mean,Nice,Think 1st asked,2
+1499,F,Mean,3/21/14,4.712916476,four,Caucasian,1,,Closet,Closet,Yes,Nice,Mean,Think 1st asked,2
+1500,M,Nice,3/28/14,5.581931952,five,Caucasian ,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1501,M,Mean,3/28/14,3.704819277,three,Caucasian ,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1502,M,Nice,3/28/14,4.833409402,four,Caucasian ,1,,Basket,Basket,Yes,Nice,Nice,Think 1st asked,2
+1503,M,Mean,3/28/14,5.861165428,five,Caucasian,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1504,M,Mean,3/28/14,3.93483023,three,Caucasian,1,,Basket,Basket,Yes,Mean,Nice,Think 1st asked,2
+1505,M,Nice,3/28/14,5.850215096,five,Caucasian,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1506,M,Nice,3/29/14,3.395399781,three,Barbados/Scottish ,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1507,F,Mean,3/29/14,3.554216867,three,South Asian,1,,Closet,Closet,Yes,Nice,Mean,Think 1st asked,2
+1508,F,Nice,3/29/14,4.63623916,four,Caucasian-German,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1509,M,Mean,3/29/14,3.195071869,three,Caucasian-German ,1,,Basket,Closet,Yes,Nice,Nice,Think 1st asked,2
+1510,F,Mean,3/29/14,4.194961665,four,Polish ,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1511,F,Nice,3/29/14,4.759470561,four,Caucasian ,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1512,F,Nice,3/29/14,4.200438116,four,Caucasian,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1513,M,Mean,4/4/14,4.652670014,four,Caucasian,1,,Closet,Basket,Yes,Mean,Nice,Think 1st asked,2
+1514,M,Nice,4/4/14,4.014238773,four,Italian,1,,Closet,Basket,Yes,Nice,Nice,Think 1st asked,2
+1515,M,Mean,4/4/14,4.014238773,four,Italian ,1,,Basket,Basket,Yes,Mean,Nice,Think 1st asked,2
+1516,M,Nice,4/4/14,3.463855422,three,Caucasian,1,,Basket,Closet,Yes,Mean,Nice,Think 1st asked,2
+1517,F,Mean,4/4/14,5.3957763,five,Caucasian ,1,,Basket,Basket,No,Mean,Nice,Think 1st asked,2
+1518,F,Nice,4/4/14,3.838992333,three,Caucasian,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1519,F,Nice,4/5/14,4.37608398,four,Caucasian ,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1520,F,Nice,4/5/14,5.494329292,five,Caucasian ,1,,Closet,Basket,Yes,Nice,Nice,Think 1st asked,2
+1521,M,Nice,4/5/14,4.238773275,four,Caucasian ,1,,Closet,Closet,No,Nice,Nice,Think 1st asked,2
+1522,M,Mean,4/5/14,4.069003286,four,Caucasian ,1,,Closet,Closet,Yes,Mean,Mean,Think 1st asked,2
+1523,M,Mean,4/5/14,3.241615332,three,Caucasian,1,,Closet,Basket,No,No answer,No answer,Think 1st asked,2
+1524,M,Mean,4/5/14,3.71577218,three,1/2 Korean 1/2 Caucasian ,1,,Basket,Closet,Yes,Mean,Mean,Think 1st asked,2
+1525,F,Mean,4/5/14,4.411684162,four,Caucasian ,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1526,F,Nice,4/5/14,4.406207211,four,1/4 Chinese 3/4 Caucasian ,1,,Closet,Basket,Yes,Nice,Nice,Think 1st asked,2
+1527,M,Mean,8/22/14,5.205842081,five,Caucasian,1,,Closet,Basket,No,Mean,Nice,Think 1st asked,2
+1528,M,Mean,8/22/14,4.121029573,four,Caucasian,0,"No comments, so exclude to be safe",Basket,Basket,Yes,No answer,No answer,Think 1st asked,2
+1529,F,Mean,8/22/14,4.677316294,four,Caucasian,1,,Basket,Closet,Yes,Mean,Mean,Think 1st asked,2
+1530,M,Mean,8/22/14,5.320858056,five,1/2 East Asian 1/2 Caucasian,1,,Basket,Closet,Yes,Mean,Nice,Think 1st asked,2
+1531,F,Mean,8/22/14,3.929353779,three,1/2 East Asian 1/2 Caucasian,1,,Basket,Closet,Yes,Mean,Mean,Think 1st asked,2
+1532,M,Mean,8/22/14,4.241511501,four,Korean,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1533,M,Mean,8/22/14,5.869378178,five,Caucasian,1,,Closet,Closet,No,Mean,Nice,Think 1st asked,2
+1534,F,Nice,8/22/14,4.701962574,four,Caucasian,1,,Closet,Basket,Yes,Nice,Nice,Think 1st asked,2
+1535,F,Nice,8/22/14,4.345564074,four,Indian,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1536,M,Nice,8/22/14,5.531720675,five,Caucasian,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1537,M,Mean,8/23/14,5.548151529,five,Mixed ,1,,Basket,Closet,Yes,Mean,Nice,Look 1st asked,1
+1538,F,Mean,8/23/14,4.721131903,four,Middle Eastern,0,experimenter error,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1539,F,Mean,8/23/14,5.781775518,five,White,1,,Basket,Basket,Yes,Mean,Mean,Look 1st asked,1
+1540,M,Mean,8/23/14,4.107338445,four,East Asian,1,,Closet,Closet,No,Mean,Nice,Look 1st asked,1
+1541,M,Mean,8/23/14,4.227820372,four,Aboriginal ,0,experimenter error,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1542,M,Nice,8/23/14,5.131903241,five,Asian,1,,Basket,Closet,Yes,Nice,Nice,Look 1st asked,1
+1543,F,Nice,8/23/14,5.08261068,five,Asian,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1544,F,Mean,8/23/14,5.633044272,five,Mixed,1,,Basket,Closet,Yes,Mean,Nice,Look 1st asked,1
+1545,F,Nice,8/23/14,4.904609767,four,Mixed ,0,experimenter error,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1546,M,Nice,8/24/14,4.140197152,four,East Asian ,0,language issues,Basket,Closet,Yes,No answer,No answer,Look 1st asked,1
+1547,M,Nice,8/24/14,4.912825194,four,East Asian ,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1548,M,Mean,8/24/14,4.263417306,four,White,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1549,M,Mean,8/24/14,5.476951164,five,White,0,did not complete task,Closet,,,,,Look 1st asked,1
+1550,M,Mean,8/24/14,5.874853344,five,White,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1551,F,Mean,8/24/14,4.66088544,four,White,1,,Basket,Closet,No,Mean,Nice,Look 1st asked,1
+1552,M,Nice,8/24/14,4.781378366,four,Mixed ,1,,Basket,Basket,No,Mean,Nice,Look 1st asked,1
+1553,M,Mean,8/24/14,4.970333181,four,Middle Eastern,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1554,M,Nice,8/26/14,4.307228916,four,White,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1555,M,Mean,8/26/14,5.022364217,five,East Asian,1,,Closet,Basket,No,Mean,Nice,Look 1st asked,1
+1556,F,Nice,8/26/14,4.364731654,four,Aboriginal ,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1557,M,Mean,8/26/14,4.948425377,four,Asian,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1558,M,Nice,8/26/14,5.691435276,five,Asian,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1559,F,Nice,8/26/14,5.537197627,five,Mixed,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1560,M,Nice,8/26/14,5.350981287,five,Mixed ,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1561,M,Nice,8/26/14,4.205914567,four,Middle Eastern,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1562,F,Mean,9/6/14,4.211391019,four,White,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1563,M,Mean,9/6/14,5.64673665,five,East Asian,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1564,F,Nice,9/6/14,5.716073524,five,Aboriginal ,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1565,M,Nice,9/6/14,5.350981287,five,Asian,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1566,F,Mean,9/6/14,5.899491592,five,Asian,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1567,M,Mean,9/6/14,5.214057508,five,Mixed,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1568,M,Mean,9/6/14,4.375684556,four,Mixed ,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1569,M,Nice,9/6/14,5.485166591,five,East Asian ,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1570,F,Mean,9/10/14,5.361935189,five,East Asian ,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1571,M,Mean,9/10/14,5.638521223,five,White,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1572,M,Nice,9/10/14,5.67138293,five,White,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1573,F,Nice,9/10/14,4.353778751,four,White,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1574,F,Mean,9/12/14,4.649507119,four,White,1,,Basket,Basket,No,Mean,Nice,Look 1st asked,1
+1575,M,Nice,9/12/14,4.548192771,four,Mixed ,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1576,M,Mean,9/12/14,5.795463434,five,East Asian,1,,Basket,Basket,No,Mean,Nice,Look 1st asked,1
+1577,M,Nice,9/12/14,4.184008762,four,White,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1578,M,Mean,9/17/14,4.825193975,four,Asian,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1579,F,Nice,9/17/14,4.945686901,four,Mixed,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1580,M,Nice,9/17/14,4.460569551,four,Mixed ,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1581,M,Mean,9/17/14,5.839264763,five,Middle Eastern,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1582,F,Nice,9/17/14,5.115472387,five,White,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1583,F,Mean,9/19/14,4.899132816,four,East Asian,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1584,M,Mean,9/19/14,5.449566408,five,Aboriginal ,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1585,F,Mean,9/19/14,5.608397992,five,Asian,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1586,F,Nice,9/19/14,5.57827476,five,Asian,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1587,F,Nice,9/19/14,5.285257873,five,Mixed,1,,Basket,Basket,No,Mean,Nice,Look 1st asked,1
+1588,M,Nice,9/19/14,5.619351894,five,Mixed ,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1589,F,Mean,9/19/14,4.170317634,four,East Asian ,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1590,M,Nice,9/27/14,5.734367869,five,White,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1591,M,Mean,9/27/14,4.792332268,four,Hispanic,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1592,F,Mean,9/27/14,5.320858056,five,White,1,,Closet,Closet,No,Mean,Mean,Look 1st asked,1
+1593,F,Nice,9/27/14,5.597444089,five,East Asian,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1594,M,Mean,9/27/14,5.019625742,five,East Asian,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1595,M,Nice,10/4/14,5.047010497,five,Mixed ,0,interference by others,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1596,M,Nice,10/4/14,5.331811958,five,White,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1597,M,Mean,10/4/14,5.123687814,five,White,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1598,F,Mean,10/4/14,5.493382017,five,East Asian,1,,Closet,Basket,No,Mean,Nice,Look 1st asked,1
+1599,F,Nice,10/4/14,5.241442264,five,White,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1600,F,Mean,10/5/14,5.597444089,five,Hispanic,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1601,F,Nice,10/5/14,5.000456413,five,White,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1602,F,Mean,10/5/14,5.34276586,five,White,1,,Closet,Basket,No,Mean,Nice,Look 1st asked,1
+1603,F,Nice,10/26/14,5.92412984,five,White ,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1604,F,Nice,10/26/14,4.507119387,four,South Asian ,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1605,M,Nice,10/26/14,4.772727273,four,Middle Eastern ,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1606,M,Mean,10/26/14,4.89639434,four,White,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1607,F,Nice,11/2/14,4.394852136,four,White,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1608,M,Mean,11/2/14,5.140118667,five,East Asian ,1,,Closet,Basket,Yes,Mean,Mean,Look 1st asked,1
+1609,M,Nice,11/2/14,5.375627567,five,Mixed,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1610,F,Mean,11/2/14,4.252464403,four,Mixed,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1611,M,Nice,11/2/14,4.252464403,four,Mixed,1,,Closet,Closet,Yes,Nice,Mean,Look 1st asked,1
+1612,F,Mean,11/5/14,4.641292442,four,White,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1613,F,Nice,11/5/14,4.822015334,four,Mixed,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1614,F,Nice,11/7/14,4.296276013,four,Hispanic/other,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1615,F,Mean,11/7/14,4.84939759,four,Mixed,1,,Basket,Basket,Does not know,Mean,Nice,Look 1st asked,1
+1616,F,Mean,11/7/14,4.545454545,four,White,1,,Closet,Closet,No,Mean,Nice,Look 1st asked,1
+1617,F,Nice,11/7/14,4.471522453,four,East Asian,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1618,F,Mean,11/12/14,4.460569551,four,White,1,,Closet,Basket,No,Nice,Nice,Look 1st asked,1
+1619,M,Mean,11/12/14,4.802847755,four,White,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1620,F,Nice,11/16/14,4.91556367,four,White,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1621,F,Mean,11/16/14,4.279846659,four,Mixed,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1622,F,Nice,11/16/14,4.12924425,four,Mixed,1,,Basket,Basket,Yes,Nice,Mean,Look 1st asked,1
+1623,F,Nice,11/16/14,5.73984482,five,White,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1624,F,Mean,11/19/14,4.181270537,four,White,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1625,M,Nice,11/19/14,4.036144578,four,East Asian,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1626,M,Nice,11/19/14,4.077217963,four,Mixed,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1627,M,Mean,11/19/14,4.263417306,four,Mixed,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1628,M,Nice,11/21/14,5.0579644,five,White,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1629,M,Mean,11/21/14,4.036144578,four,East Asian,1,,Closet,Closet,No,Mean,Nice,Look 1st asked,1
+1630,M,Mean,11/21/14,5.446827932,five,White,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1631,F,Nice,11/21/14,4.39211391,four,White,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1632,F,Mean,11/21/14,4.39211391,four,White,1,,Basket,Closet,Yes,Mean,Nice,Look 1st asked,1
+1633,M,Mean,11/26/14,5.222272935,five,East Asian ,1,,Closet,Basket,No,Mean,Nice,Look 1st asked,1
+1634,M,Nice,11/26/14,4.764512596,four,White,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1635,M,Mean,11/30/14,4.003285871,four,White,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1636,F,Nice,11/30/14,4.918302145,four,East Asian ,0,language issues,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1637,F,Nice,11/30/14,4.463307777,four,East Asian ,1,,Closet,Closet,Yes,Nice,Mean,Look 1st asked,1
+1638,M,Mean,11/30/14,4.802847755,four,Middle Eastern ,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1639,F,Nice,12/3/14,4.635815991,four,White,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1640,F,Mean,12/3/14,4.397590361,four,White,1,,Basket,Basket,No answer,No answer,Nice,Look 1st asked,1
+1641,F,Nice,12/10/14,4.518072289,four,Mixed,1,,Closet,Basket,Yes,Nice,Nice,Think 1st asked,2
+1642,M,Nice,12/10/14,4.720700986,four,White,1,,Closet,Closet,Yes,Nice,Nice,Think 1st asked,2
+1643,M,Nice,12/10/14,5.496120493,five,White,1,,Closet,Closet,Yes,Nice,Mean,Think 1st asked,2
+1644,M,Mean,12/10/14,4.676889376,four,White,1,,Basket,Basket,Yes,Mean,Nice,Think 1st asked,2
+1645,F,Mean,12/10/14,4.3483023,four,White,1,,Basket,Basket,Yes,Mean,Nice,Think 1st asked,2
+1646,F,Nice,12/13/14,4.296276013,four,White,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1647,F,Mean,12/13/14,4.414019715,four,White,1,,Closet,Closet,No,Mean,Nice,Think 1st asked,2
+1648,M,Nice,12/13/14,4.000547645,four,White,1,,Closet,Basket,Yes,Nice,Nice,Think 1st asked,2
+1649,M,Mean,12/13/14,5.720675491,five,White,1,,Basket,Basket,No,Mean,Nice,Look 1st asked,1
+1650,M,Mean,12/13/14,4.685104053,four,White ,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1651,M,Nice,12/13/14,4.383899233,four,White ,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1652,M,Mean,3/7/15,4.452761296,four,White,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1653,M,Mean,3/7/15,4.91556367,four,Middle Eastern ,1,,Closet,Closet,No,Mean,Nice,Look 1st asked,1
+1654,M,Nice,3/7/15,4.159364732,four,White,0,Did not pay attention,Basket,Closet,No,Mean,Mean,Look 1st asked,1
+1655,M,Nice,3/7/15,4.904609767,four,,1,,Closet,Closet,No,Mean,Nice,Look 1st asked,1
+1656,F,Nice,3/13/15,4.91556367,four,White,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1657,F,Nice,3/13/15,4.786855317,four,White,1,,Closet,Basket,Yes,Nice,Mean,Look 1st asked,1
+1658,M,Mean,3/13/15,4.389776358,four,White ,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1659,F,Mean,3/13/15,5.660798122,five,White,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1660,F,Mean,3/13/15,4.997717937,four,Mixed,1,,Closet,Basket,No,Mean,Nice,Look 1st asked,1
+1661,F,Nice,3/28/15,4.652670014,four,White,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1662,M,Nice,3/28/15,5.819640063,five,Mixed,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1663,F,Mean,3/28/15,4.433591967,four,Middle Eastern ,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1664,F,Mean,3/28/15,5.997652582,five,White,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1665,F,Nice,3/28/15,4.507530808,four,White,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1666,F,Mean,3/28/15,4.181270537,four,White ,1,,Closet,Closet,Yes,Mean,Nice,Look 1st asked,1
+1667,F,Nice,3/28/15,5.381455399,five,White,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1668,F,Nice,3/28/15,4.513007759,four,White,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1669,F,Mean,3/28/15,4.515746235,four,White,1,,Basket,Basket,Yes,Mean,Nice,Look 1st asked,1
+1670,M,Nice,3/28/15,4.389776358,four,White ,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1671,M,Mean,3/28/15,4.712916476,four,White ,1,,Basket,Closet,Yes,Mean,Nice,Look 1st asked,1
+1672,M,Mean,4/11/15,4.784116842,four,East Asian,1,,Basket,Closet,No,Mean,Nice,Look 1st asked,1
+1673,M,Nice,4/11/15,4.06626506,four,East Asian,1,,Closet,Closet,Yes,Mean,Mean,Look 1st asked,1
+1674,M,Mean,4/11/15,4.548607942,four,White,1,,Basket,Basket,Yes,Nice,Nice,Look 1st asked,1
+1675,M,Nice,4/18/15,4.608854404,four,White,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1
+1676,M,Mean,4/18/15,4.701962574,four,East Asian,1,,Closet,Closet,Yes,Nice,Nice,Look 1st asked,1
+1677,M,Nice,4/18/15,4.608854404,four,White,1,,Closet,Closet,Yes,Nice,,Look 1st asked,1
+1678,M,Mean,9/12/14,4.981287084,four,Middle Eastern,1,,Closet,Basket,Yes,Mean,Nice,Look 1st asked,1
+1679,M,Nice,9/12/14,5.926867423,five,Aboriginal ,1,,Closet,Basket,Yes,Nice,Nice,Look 1st asked,1

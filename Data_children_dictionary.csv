@@ -1,0 +1,19 @@
+﻿"This is the dictionary for the dataset ""Data_adults_v01.csv"". This dataset is from Study 2pre (see main text and Supplementary Material).",
+,
+Variable,Definition
+Subject Number,Subject ID
+Gender,M=Male; F=Female
+Nice_Mean,Nice or Mean
+Test Date,Date of experiment
+Age,Age in years
+Age Category,"three, four, or five"
+Ethnicity,Ethnicity
+Usable_Final_Sally,Whether participant is excluded (1=keep; 0=exclude)
+Exclusion_Criteria_Sally,Exclusion criteria
+Where will Sally look?,Closet or Basket
+Where does Sally think her ball is?,Closet or Basket
+Should Anne and Sally be friends?,Yes or No
+Is Anne a nice girl or not a nice girl,Mean or Nice
+Is Sally a nice girl or not a nice girl?,Mean or Nice
+Order of think and look asked,Look 1st asked or Think 1st asked
+1: look asked first; 2: think asked first ,1 = look asked first; 2 = think asked first

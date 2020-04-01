@@ -1,0 +1,855 @@
+---
+title: "False belief understanding across children and adults during exposure to mean versus nice behaviors"
+author: "Lily Tsoi, email: ltsoi@princeton.edu"
+date: '`r format(Sys.time(), "%B %d, %Y")`'
+output:
+  html_notebook: 
+    code_folding: show
+    theme: flatly
+    highlight: tango
+    toc: yes
+    toc_depth: 6
+    toc_float: no
+---
+
+## Install packages
+
+```{r, message=FALSE, results="hide", warning=FALSE}
+packages <- c("tidyverse", "Rmisc", "optimx", "emmeans", "sjPlot", "knitr", "TOSTER", "ordinal", "lme4", "simr")
+packages_new <- packages[!(packages %in% installed.packages()[,"Package"])]
+if(length(packages_new)) install.packages(packages_new)
+lapply(packages,library,character.only=T)
+
+# set palette color for figures
+palette(c("#f6bd60", "#f5cac3", "#84a59d"))
+
+```
+
+## Import and organize data
+
+### Study 1
+
+```{r}
+
+file <- "Data_children.csv"
+
+# read file
+df_child_orig <- read.csv(file, na.strings=c("","NA","No answer"))
+
+# make sure variables are read properly (numeric as numeric, factor as factor). use str(df_child) to examine variables
+df_child <- df_child_orig
+df_child$Age <- as.numeric(as.character(df_child$Age))
+df_child$Subject.Number <- as.factor(as.character(df_child$Subject.Number))
+
+# scale Age
+df_child$Age_scaled <- scale(df_child$Age)
+
+# only limit the data to children ages 3, 4, and 5
+df_child <- subset(df_child, Age >= 3 & Age < 6)
+df_child <- droplevels(df_child)
+
+# turn categorical age to ordered variable
+df_child$Age.Category <- ordered(factor(df_child$Age.Category, levels=c("three","four","five"))) # specify order of levels
+
+# convert nonsense response to NA
+df_child$Is.Sally.a.nice.girl.or.not.a.nice.girl.[df_child$Is.Sally.a.nice.girl.or.not.a.nice.girl. == "No"] <- NA
+
+# create new variables
+
+# variables related to accuracy
+df_child$Think[df_child$Where.does.Sally.think.her.ball.is. == 'Basket'] <- 1
+df_child$Think[df_child$Where.does.Sally.think.her.ball.is. == 'Closet'] <- 0
+df_child$Look[df_child$Where.will.Sally.look. == 'Basket'] <- 1
+df_child$Look[df_child$Where.will.Sally.look. == 'Closet'] <- 0
+
+# variables related to congruence
+df_child$Should.Anne.and.Sally.be.friends.congruent[df_child$Should.Anne.and.Sally.be.friends. == 'Yes' & df_child$Nice_Mean == 'Nice'] <- 1
+df_child$Should.Anne.and.Sally.be.friends.congruent[df_child$Should.Anne.and.Sally.be.friends. == 'No' & df_child$Nice_Mean == 'Mean'] <- 1
+df_child$Should.Anne.and.Sally.be.friends.congruent[df_child$Should.Anne.and.Sally.be.friends. == 'Yes' & df_child$Nice_Mean == 'Mean'] <- 0
+df_child$Should.Anne.and.Sally.be.friends.congruent[df_child$Should.Anne.and.Sally.be.friends. == 'No' & df_child$Nice_Mean == 'Nice'] <- 0
+df_child$Is.Anne.a.nice.girl.or.not.a.nice.girl.congruent[df_child$Is.Anne.a.nice.girl.or.not.a.nice.girl == 'Nice' & df_child$Nice_Mean == 'Nice'] <- 1
+df_child$Is.Anne.a.nice.girl.or.not.a.nice.girl.congruent[df_child$Is.Anne.a.nice.girl.or.not.a.nice.girl == 'Mean' & df_child$Nice_Mean == 'Mean'] <- 1
+df_child$Is.Anne.a.nice.girl.or.not.a.nice.girl.congruent[df_child$Is.Anne.a.nice.girl.or.not.a.nice.girl == 'Nice' & df_child$Nice_Mean == 'Mean'] <- 0
+df_child$Is.Anne.a.nice.girl.or.not.a.nice.girl.congruent[df_child$Is.Anne.a.nice.girl.or.not.a.nice.girl == 'Mean' & df_child$Nice_Mean == 'Nice'] <- 0
+df_child$Should.Anne.and.Sally.be.friends.congruent <- as.factor(df_child$Should.Anne.and.Sally.be.friends.congruent)
+df_child$Is.Anne.a.nice.girl.or.not.a.nice.girl.congruent <- as.factor(df_child$Is.Anne.a.nice.girl.or.not.a.nice.girl.congruent)
+
+# drop unused levels from factors
+df_child <- droplevels(df_child)
+df_child <- mutate(df_child, Prop_correct = (Think + Look)/2)
+
+# turn question type into a factor
+df_child_quest <- df_child %>% gather(key = Question, value = Correct, Think, Look)
+df_child_quest$Question <- as.factor(df_child_quest$Question)
+
+# create variable for counterbalancing order
+df_child_quest$Counterbalancing_order[df_child_quest$Question == "Look" & df_child_quest$Order.of.think.and.look.asked == "Look 1st asked"] <- "first"
+df_child_quest$Counterbalancing_order[df_child_quest$Question == "Think" & df_child_quest$Order.of.think.and.look.asked == "Think 1st asked"] <- "first"
+df_child_quest$Counterbalancing_order[df_child_quest$Question == "Look" & df_child_quest$Order.of.think.and.look.asked == "Think 1st asked"] <- "second"
+df_child_quest$Counterbalancing_order[df_child_quest$Question == "Think" & df_child_quest$Order.of.think.and.look.asked == "Look 1st asked"] <- "second"
+df_child_quest$Counterbalancing_order <- as.factor(df_child_quest$Counterbalancing_order)
+
+# subset by usable data
+df_child_Sally <- subset(df_child, Usable_Final_Sally == 1)
+df_child_quest_Sally <- subset(df_child_quest, Usable_Final_Sally == 1)
+
+# subset data by comp check
+df_child_congruent <- subset(df_child_Sally, Is.Anne.a.nice.girl.or.not.a.nice.girl.congruent == 1)
+df_child_quest_congruent <- subset(df_child_quest_Sally, Is.Anne.a.nice.girl.or.not.a.nice.girl.congruent == 1)
+
+```
+
+### Study 2
+
+```{r}
+
+# read hdr
+file_qualtrics_pre <- list.files(getwd(), pattern="pre.csv")
+df_adults_long <- read.csv(file_qualtrics_pre, header=TRUE, nrows=1, as.is = TRUE, na.strings = c("-99","", "NA"))
+df_adults_long <- df_adults_long[FALSE,]
+
+# bind all three versions
+for (f in c("2pre", "2a", "2b")) {
+  file_qualtrics_v <- list.files(getwd(), pattern=paste0("Data_adults_Study", f, '.csv'))
+  df_tmp <- read.csv(file_qualtrics_v, header=TRUE, as.is = TRUE, na.strings = c("-99","","NA"))
+  df_tmp$version <- f
+  df_adults_long <- bind_rows(df_adults_long, df_tmp)
+}
+
+turn_to_factor <- c("RecordedDate", "ResponseId", "Gender", "condition", "Question", "version")
+df_adults_long <- df_adults_long %>% mutate_at(turn_to_factor, factor)
+df_adults_long$trial <- factor(df_adults_long$trial, ordered = TRUE, levels = as.character(1:max(unique(df_adults_long$trial))))
+df_adults_long$Nice <- factor(df_adults_long$Nice, ordered = TRUE, levels = c("not at all\n1", "2", "3", "4", "5", "6", "very\n7"))
+levels(df_adults_long$Nice) <- list("1"="not at all\n1", "2"="2", "3"="3", "4"="4", "5"="5", "6"="6", "7"="very\n7")
+df_adults_long$item <- factor(df_adults_long$item, levels = as.character(1:max(unique(df_adults_long$item))))
+
+# re-code condition
+df_adults_long$condition <- recode(df_adults_long$condition, cooperation = "nice", competition = "mean")
+
+# scale age
+df_adults_long$Age_scaled <- scale(df_adults_long$Age, center = TRUE, scale = TRUE)
+
+# for descriptive stats on demographics
+df_adults_dem <- df_adults_long
+
+# remove attention check as item
+df_adults_long <- df_adults_long %>% filter(!condition == "attention")
+df_adults_long <- droplevels(df_adults_long)
+df_adults_2pre <- subset(df_adults_long, version == "2pre")
+df_adults_2a <- subset(df_adults_long, version == "2a")
+df_adults_2b <- subset(df_adults_long, version == "2b")
+
+```
+
+## Study 1
+
+### Descriptive statistics
+
+#### Sample demographics
+
+##### Overall
+
+```{r}
+
+by(df_child_Sally[,c("Age.Category", "Gender")], df_child_Sally[,c("Age.Category")], summary)
+
+```
+
+##### By condition
+
+```{r}
+
+by(df_child_Sally[,c("Age.Category", "Gender", "Nice_Mean", "Age")], df_child_Sally[,c("Nice_Mean")], summary)
+
+```
+
+##### By question order
+
+The order in which the two main questions ("Where will Sally look?" and "Where does Sally think her ball is?") were presented was counterbalanced across participants. However, there are concerns that because of high exclusion rates, the final count for one order could be higher than the other. We examine that here.
+
+```{r}
+
+by(df_child_Sally[,c("Age.Category", "Gender", "Nice_Mean", "Order.of.think.and.look.asked")], df_child_Sally[,c("Order.of.think.and.look.asked")], summary)
+
+```
+
+##### By comprehension question (congruent with condition or not)
+
+```{r}
+
+by(df_child_Sally[,c("Age.Category", "Gender", "Nice_Mean", "Is.Anne.a.nice.girl.or.not.a.nice.girl.congruent")], df_child_Sally[,c("Nice_Mean")], summary)
+
+```
+
+##### By age category
+
+```{r}
+
+df_age <- summarySE(df_child_Sally, measurevar = "Age", groupvars = c("Age.Category", "Nice_Mean"))
+
+age_1 <- subset(df_child_Sally, Nice_Mean == 'Nice')
+age_2 <- subset(df_child_Sally, Nice_Mean == 'Mean')
+
+
+for (age_cat in c("three", "four", "five")) {
+  print(age_cat)
+  
+  # perform t-test for each age category
+  print(t.test(age_1$Age[which(age_1$Age.Category == age_cat)], age_2$Age[which(age_2$Age.Category == age_cat)], alternative="two.sided"))
+  
+  
+  # calculate cohen's d
+  g1_m <- df_age$Age[which(df_age$Nice_Mean == "Nice" & df_age$Age.Category == age_cat)]
+  g1_sd <- df_age$sd[which(df_age$Nice_Mean == "Nice" & df_age$Age.Category == age_cat)]
+  g2_m <- df_age$Age[which(df_age$Nice_Mean == "Mean" & df_age$Age.Category == age_cat)]
+  g2_sd <- df_age$sd[which(df_age$Nice_Mean == "Mean" & df_age$Age.Category == age_cat)]
+  
+  d <- (g2_m - g1_m) / sqrt((g1_sd^2 + g2_sd^2)/2)
+  print(sprintf("Cohen's d for Age Category %s: %0.3f", age_cat, d))
+  }
+
+
+
+```
+
+
+### Figures
+
+#### Figure 1. Condition differences
+
+##### (A) By condition
+
+```{r}
+
+ggplot(df_child_Sally, aes(y = Prop_correct, x = Nice_Mean)) +
+  stat_summary(fun.data="mean_cl_boot", fun.args=list(B = 10000), na.rm=TRUE, position=position_dodge(width=0.3), size=1) +
+  ylim (0,1) +
+  ylab ("% of children answering correctly") +
+  xlab ("Condition") +
+  theme_bw() +
+  theme(axis.text=element_text(size=12),
+        axis.title=element_text(size=14,face="bold"),
+        axis.title.y=element_text(margin=margin(r=20)),
+        axis.title.x=element_text(margin=margin(t=20)),
+        legend.text=element_text(size=12),
+        legend.title=element_text(size=12,face="bold"),
+        legend.key.size=unit(3, "lines"),
+        strip.text=element_text(size=14, face="bold"),
+        panel.grid.major.x=element_blank(),
+        panel.grid.major.y=element_blank(),
+        plot.title = element_text(hjust = 0.5))
+
+```
+
+##### (B) By condition and age
+
+```{r}
+
+ggplot(df_child_Sally, aes(y = Prop_correct, x = Nice_Mean, color= Age.Category)) +
+  stat_summary(fun.data="mean_cl_boot", fun.args=list(B = 10000), na.rm=TRUE, position=position_dodge(width=0.3), size=1) +
+  ylim (0,1) +
+  ylab ("% of children answering correctly") +
+  xlab ("Condition") +
+  scale_color_manual(values = palette(), name="Age Category") +
+  theme_bw() +
+  theme(axis.text=element_text(size=12),
+        axis.title=element_text(size=14,face="bold"),
+        axis.title.y=element_text(margin=margin(r=20)),
+        axis.title.x=element_text(margin=margin(t=20)),
+        legend.text=element_text(size=12),
+        legend.title=element_text(size=12,face="bold"),
+        legend.key.size=unit(3, "lines"),
+        strip.text=element_text(size=14, face="bold"),
+        panel.grid.major.x=element_blank(),
+        panel.grid.major.y=element_blank(),
+        plot.title = element_text(hjust = 0.5))
+
+```
+
+#### Responses to Questions 3-5
+
+##### (A) Should Anne and Sally be friends?
+
+```{r, warning=FALSE}
+t_friends <- df_child_Sally %>%
+  group_by(Age.Category, Nice_Mean, Should.Anne.and.Sally.be.friends.) %>%
+  dplyr::summarise(n = n())
+t_friends <- left_join(t_friends, summarise_at(t_friends, vars(n), sum), by=c("Age.Category", "Nice_Mean")) %>%
+  mutate(prop = n.x / n.y)
+  
+t_friends$Should.Anne.and.Sally.be.friends. <- factor(t_friends$Should.Anne.and.Sally.be.friends., levels=c("No","Yes","Does not know", "NA")) # specify order of level
+
+ggplot(t_friends, aes(y=prop, x=Nice_Mean, fill=Should.Anne.and.Sally.be.friends.)) +
+  geom_bar(stat="identity", colour="black") +
+  geom_text(aes(label = round(prop, digits=2)), position=position_stack(vjust=0.5)) +
+  facet_wrap(~Age.Category, ncol=3) +
+  xlab("Condition - Mean or Nice Anne") +
+  ylab("Proportion") +
+  ggtitle("Should Anne and Sally be friends?") +
+  scale_fill_manual(values = c("#5998c5","#b5d8cc", "#d5c6e0", "#ceeddb"), name="", labels=c("No", "Yes", "Does not know", "No response")) +
+  theme_bw() +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+##### (B) Is Anne a nice girl or not a nice girl?
+
+```{r, warning=FALSE}
+
+t_anne <- df_child_Sally %>%
+  group_by(Age.Category, Nice_Mean, Is.Anne.a.nice.girl.or.not.a.nice.girl) %>%
+  dplyr::summarise(n = n())
+t_anne <- left_join(t_anne, summarise_at(t_anne, vars(n), sum), by=c("Age.Category", "Nice_Mean")) %>%
+  mutate(prop = n.x / n.y)
+
+ggplot(t_anne, aes(y=prop, x=Nice_Mean, fill=Is.Anne.a.nice.girl.or.not.a.nice.girl)) +
+  geom_bar(stat="identity", colour="black") +
+  geom_text(aes(label = round(prop, digits=2)), position=position_stack(vjust=0.5)) +
+  facet_wrap(~Age.Category, ncol=3) +
+  xlab("Condition - Mean or Nice Anne") +
+  ylab("Proportion") +
+  ggtitle("Is Anne a nice girl or not a nice girl?") +
+  scale_fill_manual(values = c("#bfbfbf", "#ffe5d9", "#4b5358"), name="", labels=c("Not Nice", "Nice", "No response")) +
+  theme_bw() +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+##### (C) Is Sally a nice girl or not a nice girl?
+
+```{r, warning=FALSE}
+t_sally <- df_child_Sally %>%
+  group_by(Age.Category, Nice_Mean, Is.Sally.a.nice.girl.or.not.a.nice.girl.) %>%
+  dplyr::summarise(n = n())
+t_sally <- left_join(t_sally, summarise_at(t_sally, vars(n), sum), by=c("Age.Category", "Nice_Mean")) %>%
+  mutate(prop = n.x / n.y)
+
+ggplot(t_sally, aes(y=prop, x=Nice_Mean, fill=Is.Sally.a.nice.girl.or.not.a.nice.girl.)) +
+  geom_bar(stat="identity", colour="black") +
+  geom_text(aes(label = round(prop, digits=2)), position=position_stack(vjust=0.5)) +
+  facet_wrap(~Age.Category, ncol=3) +
+  xlab("Condition - Mean or Nice Anne") +
+  ylab("Proportion") +
+  ggtitle("Is Sally a nice girl or not a nice girl?") +
+  scale_fill_manual(values = c("#bfbfbf", "#ffe5d9", "#85baa1", "#4b5358"), name="", labels=c("Not Nice", "Nice", "Other", "No response")) +
+  theme_bw() +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+#### Figure S2. Performance by Question Type
+
+```{r, fig.height = 3}
+
+ggplot(df_child_quest_Sally, aes(y = Correct, x = Age.Category, color= Question)) +
+  stat_summary(fun.data="mean_cl_boot", position=position_dodge(0.3)) + 
+    ylim (0,1) +
+    ylab ("Proportion of children answering correctly") +
+    xlab ("Age Category") +
+    scale_color_manual(values = c("#AFC0E8","#1F49AB"), labels = c("Where will Sally look?", "Where does Sally think her ball is?")) +
+    theme_bw() +
+    theme(axis.text=element_text(size=12),
+          axis.title=element_text(size=14,face="bold"),
+          axis.title.y=element_text(margin=margin(r=20)),
+          axis.title.x=element_text(margin=margin(t=20)),
+          legend.text=element_text(size=12),
+          legend.title=element_text(size=12,face="bold"),
+          legend.key.size=unit(3, "lines"),
+          strip.text=element_text(size=14, face="bold"),
+          panel.grid.major.x=element_blank(),
+          panel.grid.major.y=element_blank(),
+          plot.title = element_text(hjust = 0.5))
+```
+
+### Analyses
+
+Variables we care about:
+
+- Correct (Incorrect=0, Correct=1)
+- Condition (Mean, Nice)
+- Age Category (3s, 4s, 5s)
+- Question Type ("Where will Sally look?", "Where does Sally think her ball is?")
+- Is-Anne-Nice? (Mean, Nice)
+- Counterbalancing Order ("Look" first, "Think" first)
+- Gender (F,M)
+
+The same analyses were performed for:
+- all usable data ("all")
+- data from people responding to the question "Is Anne a nice girl or not a nice girl?" in a manner congruent with the condition to which they were assigned ("congruent")
+
+For both sets of data, we performed the same analyses using age as a categorical variable (Age Category) and age as a continuous variable (Age).
+
+```{r}
+
+var_dat <- c("all", "congruent")
+var_age <- c("Age.Category", "Age_scaled")
+
+for (d in var_dat) {
+  if (exists("dat_model")) {rm(dat_model)}
+  if (d == "all") {
+    cat('\n\n*** All usable data ***\n\n')
+    dat_model <- df_child_quest_Sally
+  } else if (d == "congruent") {
+    cat('\n\n*** Congruent data only ***\n\n')
+    dat_model <- df_child_quest_congruent
+  }
+  for (a in var_age) {
+    cat(paste0('\n\n--- Using the following age variable: ', a, ' ---\n\n'))
+    dat_model$Age_model <- dat_model[,a]
+    
+    model <- glmer(Correct ~ Nice_Mean + Question + Age_model + Counterbalancing_order + Gender +
+                    Nice_Mean:Question +
+                    Nice_Mean:Age_model +
+                    Nice_Mean:Counterbalancing_order +
+                    Question:Age_model +
+                    Nice_Mean:Question:Age_model +
+                    (1 | Subject.Number),
+                  data = dat_model,
+                  family = binomial,
+                  control = glmerControl(optimizer = 'optimx', optCtrl = list(method = 'bobyqa'))) # methods: nlminb, bobyqa
+    
+    # remove 3-way interaction
+    model.1 <- update(model, . ~ . -Nice_Mean:Question:Age_model)
+    print(drop1(model.1, test="Chisq"))
+    # remove 2-way interactions with Condition
+    model.2 <- update(model.1, . ~ . -Nice_Mean:Question -Nice_Mean:Age_model -Nice_Mean:Order.of.think.and.look.asked -Nice_Mean:Gender -Nice_Mean:Counterbalancing_order -Question:Counterbalancing_order)
+    print(drop1(model.2, test="Chisq"))
+    
+    print(summary(model))
+    print(tab_model(model, show.std = "std2", show.stat = TRUE, show.df = TRUE, file = paste0('model_1_', d, '_', a, '_fb.html')))
+
+    if (a == "Age.Category") {
+      cat("\n\nCondition by Age Category\n\n")
+      print(emmeans(model, pairwise ~ Nice_Mean | Age_model, type="response")$contrast)
+      cat("\nQuestion by Age Category\n\n")
+      print(emmeans(model, pairwise ~ Question | Age_model, type="response")$contrast)
+    }
+    cat("\n\nCondition by Question Type\n\n")
+    print(emmeans(model, pairwise ~ Nice_Mean | Question, type="response")$contrast)
+    cat("\n\nCondition by Counterbalancing Order\n\n")
+    print(emmeans(model, pairwise ~ Nice_Mean | Counterbalancing_order, type="response")$contrast)
+    
+  }
+}
+
+```
+
+## Study 2
+
+
+### Study 2 combining Study 2a and 2b
+
+#### Descriptives
+
+##### Sample demographics
+
+```{r}
+
+print("With no exclusions")
+
+dem_noexcl <- subset(df_adults_dem, condition == "attention") %>% distinct_at(c("ResponseId", "Age", "Gender"))
+
+summary(dem_noexcl[c("Age", "Gender")])
+
+print("With exclusions")
+
+dem <- subset(df_adults_dem, condition == "attention" & correct == TRUE) %>% distinct_at(c("ResponseId", "Age", "Gender"))
+
+summary(dem[c("Age", "Gender")])
+
+```
+##### By condition
+
+```{r}
+
+dem_by_subj <- summarySE(subset(df_adults_long, version == "2a" | version == "2b"), measurevar = "correct", groupvars = c("ResponseId", "condition"))
+with(dem_by_subj, table(condition))
+
+dem_count <- count(dem_by_subj, vars = c("correct", "condition"))
+dem_count
+sum(dem_count$freq)
+
+```
+
+##### Figure 2. Condition differences
+
+```{r, fig.width = 5}
+
+df_adults_plot <- summarySE(subset(df_adults_long, version == "2a" | version == "2b"), measurevar = "correct", groupvars = c("ResponseId", "condition"))
+
+ggplot(df_adults_plot, aes(y = correct, x = condition)) +
+  geom_violin() +
+  stat_summary(fun.data="mean_cl_boot", fun.args=list(B = 10000), na.rm=TRUE, position=position_dodge(width=0.3), size=0.5) +
+  ylim (0,1) +
+  ylab ("Proportion of questions answered correctly") +
+  xlab ("Condition") +
+  theme_bw() +
+  theme(axis.text=element_text(size=12),
+        axis.title=element_text(size=14,face="bold"),
+        axis.title.y=element_text(margin=margin(r=20)),
+        axis.title.x=element_text(margin=margin(t=20)),
+        legend.text=element_text(size=12),
+        legend.title=element_text(size=12,face="bold"),
+        legend.key.size=unit(3, "lines"),
+        plot.title = element_text(hjust = 0.5))
+```
+
+#### Analyses
+
+##### With the two full versions
+
+###### Response on the false belief question
+
+```{r}
+
+m2_full <- glmer(correct ~ condition + Gender + Age +
+                    (1|ResponseId) + (1|item),
+                  data=subset(df_adults_long, version == "2a" | version == "2b"),
+                  family=binomial, 
+                  control = glmerControl(optimizer = 'optimx', optCtrl = list(method = 'bobyqa'))) # methods: nlminb, bobyqa
+
+m3_full <- update(m2_full, . ~ . -condition)
+
+anova(m2_full, m3_full, test="Chisq")
+
+print(summary(m2_full))
+
+print(tab_model(m2_full, show.std = "std2", show.stat = TRUE, show.df = TRUE, file = paste0('model_2ab_fb.html')))
+
+print(emmeans(m2_full, pairwise ~ condition, type="response")$contrast)
+```
+
+###### Sensitivity analysis
+
+```{r}
+
+# Sensitivity power analysis for the fixed N.
+# Estimating the power to detect ES from .4 to .48 for the effect of condition
+N <- 279 
+
+es.vect <- c(.28, .29, .30)
+pwr <- NA
+m_sensitive1 <- m2_full
+m_sensitive2 <- m3_full
+for(i in 1:length(es.vect)){
+  fixef(m_sensitive1)["conditionnice"] <- es.vect[i]
+  pwr[i] <- round(as.numeric(summary(powerSim(m_sensitive1, test = compare(m_sensitive2, method = "lr"), nsim = 1000)))[3],3)
+  print(pwr[i])
+}
+
+
+```
+
+###### RT for false belief question
+
+```{r}
+
+m2_full_RT <- lmer(TF_RT ~ condition + Gender + Age +
+                    (1|ResponseId) + (1|item),
+                  data=subset(df_adults_long, version == "2a" | version == "2b"))
+
+print(summary(m2_full_RT))
+
+print(tab_model(m2_full_RT, show.std = "std2", show.stat = TRUE, show.df = TRUE, file = paste0('model_2ab_fb_RT.html')))
+
+drop1(m2_full_RT, test="Chisq")
+
+```
+
+###### Removing ceiling performance
+
+Response on the false belief question
+
+```{r}
+
+df_adults_noceil <- df_adults_long %>% filter(version == "2a" | version == "2b") %>% group_by(ResponseId, condition) %>% dplyr::mutate(correct_prop = mean(correct)) %>% ungroup() %>% filter(correct_prop != 1)
+
+m2_full_noceil <- glmer(correct ~ condition + Gender + Age +
+                    (1|ResponseId) + (1|item),
+                  data=df_adults_noceil,
+                  family=binomial, 
+                  control = glmerControl(optimizer = 'optimx', optCtrl = list(method = 'bobyqa'))) # methods: nlminb, bobyqa
+
+anova(m2_full_noceil, update(m2_full_noceil, . ~ . -condition), test="Chisq")
+
+print(summary(m2_full_noceil))
+
+print(tab_model(m2_full_noceil, show.std = "std2", show.stat = TRUE, show.df = TRUE, file = paste0('model_2ab_fb_noceil.html')))
+
+print(emmeans(m2_full_noceil, pairwise ~ condition, type="response")$contrast)
+```
+
+## Study 2-pre (Supp Mat)
+
+### Descriptives
+
+#### Sample demographics
+
+```{r}
+
+print("With no exclusions")
+
+dem_2pre_noexcl <- subset(df_adults_dem, version == "pre" & condition == "nice") %>% distinct_at(c("ResponseId", "Age", "Gender"))
+
+summary(dem_2pre_noexcl[c("Age", "Gender")])
+
+```
+
+### Analyses
+
+#### Manipulation check
+
+```{r}
+
+df_adults_2pre_m <- subset(df_adults_2pre, !is.na(condition) & !is.na(Gender) & !is.na(Age) & !is.na(ResponseId) & !is.na(item) & !is.na(Nice))
+
+m2pre_full_check <- clmm(Nice ~ condition + Gender + Age +
+                    (1|ResponseId) + (1|item),
+                  data=df_adults_2pre_m)
+
+drop1(m2pre_full_check, test="Chisq")
+
+print(emmeans(m2pre_full_check, pairwise ~ condition, type="response")$contrast, mode="mean.class")
+
+```
+
+#### Response on false belief question
+
+```{r}
+
+df_adults_2pre_m <- subset(df_adults_2pre, !is.na(condition) & !is.na(Gender) & !is.na(Age) & !is.na(ResponseId) & !is.na(item) & !is.na(correct))
+
+m2pre_full <- glmer(correct ~ condition + Gender + Age +
+                    (1|ResponseId) + (1|item),
+                  data=df_adults_2pre_m,
+                  family=binomial, 
+                  control = glmerControl(optimizer = 'optimx', optCtrl = list(method = 'bobyqa'))) # methods: nlminb, bobyqa
+
+drop1(m2pre_full, test="Chisq")
+
+print(summary(m2pre_full))
+
+print(tab_model(m2pre_full, show.std = "std2", show.stat = TRUE, show.df = TRUE, file = paste0('model_2pre_fb.html')))
+
+print(emmeans(m2pre_full, pairwise ~ condition, type="response")$contrast)
+
+```
+
+#### RT for false belief question
+
+```{r}
+
+df_adults_2pre_m <- subset(df_adults_2pre, !is.na(condition) & !is.na(Gender) & !is.na(Age) & !is.na(ResponseId) & !is.na(item) & !is.na(TF_RT))
+
+m2pre_full_RT <- lmer(TF_RT ~ condition + Gender + Age +
+                    (1|ResponseId) + (1|item),
+                  data=df_adults_2pre_m)
+
+print(summary(m2pre_full_RT))
+
+print(tab_model(m2pre_full_RT, show.std = "std2", show.stat = TRUE, show.df = TRUE, file = paste0('model_2pre_fb_RT.html')))
+
+drop1(m2pre_full_RT, test="Chisq")
+
+print(emmeans(m2pre_full_RT, pairwise ~ condition, type="response")$contrast)
+
+```
+
+## Study 2a
+
+### Descriptives
+
+#### Sample demographics
+
+```{r}
+
+print("With no exclusions")
+
+dem_2a_noexcl <- subset(df_adults_dem, version == "2a" & condition == "attention") %>% distinct_at(c("ResponseId", "Age", "Gender"))
+
+summary(dem_2a_noexcl[c("Age", "Gender")])
+
+print("With exclusions")
+
+dem_2a <- subset(df_adults_dem, version == "2b" & condition == "attention" & correct == TRUE) %>% distinct_at(c("ResponseId", "Age", "Gender"))
+
+summary(dem_2a[c("Age", "Gender")])
+
+```
+
+### Analyses
+
+#### Manipulation check
+
+```{r}
+
+m2a_full_check <- clmm(Nice ~ condition + Gender + Age +
+                    (1|ResponseId) + (1|item),
+                  data=df_adults_2a)
+
+drop1(m2a_full_check, test="Chisq")
+
+print(emmeans(m2a_full_check, pairwise ~ condition, type="response")$contrast, mode="mean.class")
+
+```
+
+#### Response on false belief question
+
+```{r}
+
+m2a_full <- glmer(correct ~ condition + Gender + Age +
+                    (1|ResponseId) + (1|item),
+                  data=df_adults_2a,
+                  family=binomial, 
+                  control = glmerControl(optimizer = 'optimx', optCtrl = list(method = 'bobyqa'))) # methods: nlminb, bobyqa
+
+drop1(m2a_full, test="Chisq")
+
+print(summary(m2a_full))
+
+print(tab_model(m2a_full, show.std = "std2", show.stat = TRUE, show.df = TRUE, file = paste0('model_2a_fb.html')))
+
+print(emmeans(m2a_full, pairwise ~ condition, type="response")$contrast)
+
+```
+
+#### RT for false belief question
+
+```{r}
+
+m2a_full_RT <- lmer(TF_RT ~ condition + Gender + Age +
+                    (1|ResponseId) + (1|item),
+                  data=df_adults_2a)
+
+print(summary(m2a_full_RT))
+print(tab_model(m2a_full_RT, show.std = "std2", show.stat = TRUE, show.df = TRUE, file = paste0('model_2a_fb_RT.html')))
+
+drop1(m2a_full_RT, test="Chisq")
+
+print(emmeans(m2a_full_RT, pairwise ~ condition, type="response")$contrast)
+
+```
+
+## Study 2b
+
+### Descriptives
+
+#### Sample demographics
+
+```{r}
+
+print("With no exclusions")
+
+dem_2b_noexcl <- subset(df_adults_dem, version == "2b" & condition == "attention") %>% distinct_at(c("ResponseId", "Age", "Gender"))
+
+summary(dem_2b_noexcl[c("Age", "Gender")])
+
+print("With exclusions")
+
+dem_2b <- subset(df_adults_dem, version == "2b" & condition == "attention" & correct == TRUE) %>% distinct_at(c("ResponseId", "Age", "Gender"))
+
+summary(dem_2b[c("Age", "Gender")])
+
+```
+
+### Analyses
+
+#### Manipulation check
+
+```{r}
+
+m2b_full_check <- clmm(Nice ~ condition + Gender + Age +
+                    (1|ResponseId) + (1|item),
+                  data=df_adults_2b)
+
+drop1(m2b_full_check, test="Chisq")
+
+print(emmeans(m2b_full_check, pairwise ~ condition, type="response")$contrast, mode="mean.class")
+
+```
+
+#### Response on false belief question
+
+```{r}
+
+m2b_full <- glmer(correct ~ condition + Gender + Age +
+                    (1|ResponseId) + (1|item),
+                  data=df_adults_2b,
+                  family=binomial, 
+                  control = glmerControl(optimizer = 'optimx', optCtrl = list(method = 'bobyqa'))) # methods: nlminb, bobyqa
+
+print(summary(m2b_full))
+print(tab_model(m2b_full, show.std = "std2", show.stat = TRUE, show.df = TRUE, file = paste0('model_2b_fb.html')))
+
+drop1(m2b_full, test="Chisq")
+
+print(emmeans(m2b_full, pairwise ~ condition, type="response")$contrast)
+
+```
+
+#### RT for false belief question
+
+```{r}
+
+m2b_full_RT <- lmer(TF_RT ~ condition + Gender + Age +
+                    (1|ResponseId) + (1|item),
+                  data=df_adults_2b)
+
+print(summary(m2b_full_RT))
+print(tab_model(m2b_full_RT, show.std = "std2", show.stat = TRUE, show.df = TRUE, file = paste0('model_2b_fb_RT.html')))
+
+drop1(m2b_full_RT, test="Chisq")
+
+print(emmeans(m2b_full_RT, pairwise ~ condition, type="response")$contrast)
+
+```
+
+## With all three versions
+
+##### Manipulation check
+
+```{r}
+
+df_adults_long_m <- subset(df_adults_long, !is.na(condition) & !is.na(Gender) & !is.na(Age) & !is.na(ResponseId) & !is.na(item) & !is.na(Nice))
+
+m_all3_full_check <- clmm(Nice ~ condition + Gender + Age +
+                    (1|ResponseId) + (1|item),
+                  data=df_adults_long_m)
+
+drop1(m_all3_full_check, test="Chisq")
+
+print(emmeans(m_all3_full_check, pairwise ~ condition, type="response")$contrast, mode="mean.class")
+
+```
+
+##### Response on the false belief question
+
+```{r}
+
+m_all3_full <- glmer(correct ~ condition + Gender + Age +
+                    (1|ResponseId) + (1|item),
+                  data=df_adults_long,
+                  family=binomial, 
+                  control = glmerControl(optimizer = 'optimx', optCtrl = list(method = 'bobyqa'))) # methods: nlminb, bobyqa
+
+anova(m_all3_full, update(m_all3_full, . ~ . -condition), test="Chisq")
+
+print(summary(m_all3_full))
+print(tab_model(m_all3_full, show.std = "std2", show.stat = TRUE, show.df = TRUE, file = paste0('model_all3_fb.html')))
+
+print(emmeans(m_all3_full, pairwise ~ condition, type="response")$contrast)
+```
+
+##### RT for false belief question
+
+```{r}
+
+df_adults_long_all <- subset(df_adults_long, !is.na(TF_RT) & !is.na(condition) & !is.na(Gender) & !is.na(Age))
+
+m_all3_full_RT <- lmer(TF_RT ~ condition + Gender + Age +
+                    (1|ResponseId) + (1|item),
+                  data=df_adults_long_all)
+
+print(summary(m_all3_full_RT))
+print(tab_model(m_all3_full_RT, show.std = "std2", show.stat = TRUE, show.df = TRUE, file = paste0('model_all3_fb_RT.html')))
+
+drop1(m_all3_full_RT, test="Chisq")
+
+```
